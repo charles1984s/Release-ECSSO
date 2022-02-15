@@ -1,0 +1,111 @@
+﻿        div { border: 0px; } 
+        body{font-family:Arial,微軟正黑體,新細明體, Helvetica, sans-serif; color:#333333;}
+		.col-md-2 {width: 25.666667%;}
+		.col-md-10 {width: 74.333333%;}
+        .shoppingdetail{border:1px #D4D4D4 dotted;border-bottom:none;}
+        .shoppinggraybg{background-color:#f5f5f5;}
+        .shoppingwhitebg{background-color:#ffffff;padding-left:3px;}
+        .shoppingred{color:#d60000; font-weight:bold;}
+        .shoppingline{border-top:solid 1px #d4d4d4;}
+        .fontright{text-align:right;}
+        .fontcenter{text-align:center;}
+        #foot { background-repeat:no-repeat; color:#898989;}
+		.fa.fa-book {padding-right: 5px;s}
+        .orderitem {text-align:right; padding-top: 5px; white-space: nowrap;padding-right: 5px !important;}
+        .orderitem2 {background-color:#f5f5f5; margin-left:-5px; margin-right:-5px;}
+        .orderitem3 {border-left:1px dotted #d4d4d4;}
+        .orderitem3 row {}
+        .orderitem4 {border-bottom:1px dotted #d4d4d4;margin-top: 15px;}
+        .table-bordered>tbody>tr>td {border:1px dotted #d4d4d4;}
+        .table-bordered>thead>tr>th {border:1px dotted #d4d4d4; background-color:#f5f5f5; text-align:center;}
+        .table{margin-bottom:0px;}
+		tr.menuGroup {background: #fed;color: #b30;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+		#shoppingcar>.row-fluid:nth-child(2)>.col-md-12 { font-size:14pt; font-weight:bold;}
+		#shoppingcar>.row-fluid:last-child>.col-md-12 { font-size:16pt !important;}
+		#RequiredFieldValidator8[style*="hidden"],#RegularExpressionValidator1[style*="hidden"],[id*="RequiredFieldValidator"][style*="hidden"] {display: none;}
+		.container>.formInput{ margin-left:25px;background-color: #ccc;
+    background: -webkit-linear-gradient(left,#f5f5f5 8%,rgba(255,255,255,0) 9%);
+    background: -moz-linear-gradient(left,#f5f5f5 8%,rgba(255,255,255,0) 9%);
+    background: -ms-linear-gradient(left,#f5f5f5 8%,rgba(255,255,255,0) 9%);}
+		.container>.row>.col-md-1{ text-align:right; padding-right:0;background-color: #f5f5f5;height: 30px;padding-top: 5px;padding-right: 5px;}
+		.container>.row>.col-md-11{ padding-left:1px;}
+		#CVSdiv .title {display: block;float: left;background-color:#f5f5f5;height: 28px;line-height: 28px; width: 8.333333%;;text-align: right;padding-right: 5px;}
+		.container>.row>.col-md-11>input {width: 80% !important;}
+		input{border: #b9b9b9 1px solid;}
+		#o_sex,#sex{height: 19pt; vertical-align: middle;}
+		#ddlCity,#ddlCountry,#ddlzip{height: 19pt; vertical-align:bottom;}
+		[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;}
+        @media (max-width: 994px) {
+            .orderitem{text-align:left; padding-left:0px;}
+            .orderitem2 {background-color:#ffffff; margin-left:0px; margin-right:0px;}
+            .orderitem3 {border-left:none;}            
+            .orderitem4 {border-bottom:none;}
+        }
+		@media (max-width: 500px) {
+			
+			.container>.formInput {
+				margin-left: 25px;
+				background-color: #fff;
+				background: -webkit-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -moz-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -ms-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+			}
+			.orderitem3 {padding-top: 15px !important;}
+			.container>.row {margin-left: 30px;}
+			.container>.row .title {display: block;float: left;}
+			.container>.row>.col-md-1 {background-color: #fff;padding-left:0;}
+			.container>.row>.col-md-11>input {width: 90% !important;}
+			#o_name, #name {width: 75% !important;}
+			#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 94% !important;}
+			[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;white-space: nowrap;}
+			.container>.row>.col-md-12{ text-align:center;padding-left: 0;}
+			#CVSdiv>.col-md-12{text-align:left;padding-left: 15px;}
+			.orderitem {text-align: left;padding-top: 5px;white-space: nowrap;padding-right: 5px !important;}
+			.orderitem2 {background-color: #fff;}
+		}
+		@media (max-width: 994px) and (orientation: landscape) {
+			.container>.formInput {
+				margin-left: 25px;
+				background-color: #fff;
+				background: -webkit-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -moz-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -ms-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+			}
+			/*.orderitem{text-align:right;}*/
+			.orderitem3 {padding-top: 15px !important;}
+			.container>.row {margin-left: 30px;}
+			.container>.row .title {display: block;float: left;}
+			.container>.row>.col-md-1 {background-color: #fff;padding-left:0;padding-right:0;}
+			.container>.row>.col-md-11>input {width: 95% !important;}
+			#o_name, #name {width: 87% !important;}
+			#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 97% !important;}
+			[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;white-space: nowrap;}
+			.container>.row>.col-md-12{ text-align:center;padding-left: 0;}
+			#CVSdiv>.col-md-12{text-align:left;padding-left: 15px;}
+			
+		}
+		@media (min-width: 501px) and (orientation: portrait) {
+			.container>.formInput {
+				margin-left: 25px;
+				background-color: #fff;
+				background: -webkit-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -moz-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+				background: -ms-linear-gradient(left,#fff 8%,rgba(255,255,255,0) 9%);
+			}
+			.orderitem3 {padding-top: 15px !important;}
+			.container>.row {margin-left: 30px;}
+			.container>.row .title {display: block;float: left;}
+			.container>.row>.col-md-1 {background-color: #fff;padding-left:0;}
+			.container>.row>.col-md-11>input {width: 95% !important;}
+			#o_name, #name {width: 87% !important;}
+			#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 97% !important;}
+			[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;white-space: nowrap;}
+			.container>.row>.col-md-12{ text-align:center;padding-left: 0;}
+			#CVSdiv>.col-md-12{text-align:left;padding-left: 15px;}
+			
+			}
+			
+		@media (min-width: 768px){
+			.orderitem{text-align:right;}
+		}
+		

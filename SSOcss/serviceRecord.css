@@ -1,0 +1,24 @@
+﻿.container {
+    padding: 20px 0;
+}
+.panel-body > .row {
+    margin: 0;
+    padding: 1rem 0;
+}
+    .panel-body > .row:not(:last-child) {
+        border-bottom: #ccc solid 1px;
+    }
+    .panel-body > .row:last-child {
+        text-align: center;
+    }
+        .panel-body > .row:last-child > .btn-success {
+            width: 60%;
+            padding: 1rem;
+        }
+    .panel-body > .row h4 {
+        font-weight:bold;
+    }
+        .panel-body > .row h4 + div {
+            padding-left: 2rem;
+        }
+    

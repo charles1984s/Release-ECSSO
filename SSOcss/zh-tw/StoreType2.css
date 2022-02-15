@@ -1,0 +1,183 @@
+﻿a {
+    color: #000;
+}
+
+div {
+    border: 0px;
+}
+
+body {
+    font-family: Arial,微軟正黑體,新細明體, Helvetica, sans-serif;
+    color: #333333;
+}
+
+.carousel-caption {
+    position: relative;
+    padding: 5% 20%;
+    left: inherit;
+    right: inherit;
+}
+
+.bkimg {
+    position: absolute;
+}
+
+.carousel-indicators .active {
+    background-color: #000000
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+}
+
+.carousel-control {
+    z-index: 100;
+}
+
+body > #form1 > .container {
+    margin: 0px;
+    width: 100%;
+}
+
+    body > #form1 > .container > .row:first-child {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+.panel-group .panel-heading {
+    color: #000;
+}
+
+    .panel-group .panel-heading > a {
+        color: #428bca;
+    }
+
+.panel-page .panel:nth-child(odd) {
+    background-color: #EDEDED;
+    color: #898989;
+}
+
+.panel-page .panel:nth-child(even) {
+    background-color: #e0e0e0;
+    color: #898989;
+}
+
+#leftframe {
+    padding-right: 0; /*overflow: hidden;*/
+}
+
+    #leftframe > #tips {
+        text-align: center;
+        margin: 10px 0 2px;
+    }
+
+    #leftframe > #arrow {
+        margin: auto;
+        border-top: 12px solid #ee5d02;
+        border-left: 8px solid #fff;
+        border-right: 8px solid #fff;
+        width: 16px;
+    }
+
+    #leftframe > ul {
+        border-right: 1px #ccc solid;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px #ccc solid;
+        border-radius: 0 5px 0 0;
+        padding-bottom: 40px;
+    }
+
+        #leftframe > ul > li { /*padding: 5px 0;*/
+            border: 1px #ccc solid;
+            border-radius: 10px 0 0 10px;
+            box-shadow: -1px 2px 0px 1px rgba(0,0,0,0.2);
+            margin: 6px 0;
+            background: transparent;
+            margin-right: -1px;
+        }
+            #leftframe > ul > li.in {
+                border-right:none;
+                background-color:#eeeeee;
+            }
+
+            #leftframe > ul > li > a {
+                border-radius: 10px 0 0 10px;
+            }
+
+                #leftframe > ul > li > a:hover {
+                    background: inherit;
+                }
+
+#store2Code {
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#rightframe > .menu_title {
+    padding: 15px 30px 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-bottom: 1px #ccc solid;
+    margin: 0 15px;
+    width: auto;
+    float: none;
+}
+
+#rightframe > .col-md-12:nth-child(2) {
+    margin-top: 10px;
+}
+
+/*新的測試*/
+#rightframe {
+    border-left: 1px #ccc solid;
+    border-top: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -3px 4px 0px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    min-height: 500px;
+}
+
+#leftframe > ul {
+    border: 0px;
+}
+
+    #leftframe > ul > li {
+        z-index: 10;
+    }
+/*新的測試END*/
+@media (max-width: 978px) {
+    body > #form1 > .container {
+        padding: 0px;
+    }
+
+    #leftframe, #rightframe {
+        padding: 0px;
+    }
+
+        #rightframe img {
+            max-width: 100%;
+        }
+
+        #leftframe > ul {
+            border: 1px #ccc solid;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+
+            #leftframe > ul > li {
+                width: auto;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+                #leftframe > ul > li > a {
+                    border-radius: 10px;
+                }
+
+    #rightframe {
+        min-height: 300px;
+    }
+}

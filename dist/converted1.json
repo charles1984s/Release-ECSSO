@@ -1,0 +1,625 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "支付連",
+    "description": "PChome 支付連金流串接",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.pchomepay.com.tw/v1",
+      "variables": {}
+    },
+    {
+      "url": "https://sandbox-api.pchomepay.com.tw/v1",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/token": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "0.取得token",
+        "description": "",
+        "operationId": "0.取得token",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "Authorization-formal",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "Basic NjlEODM4MTM1OTQwRjNBN0UwMTcxQTM2REZFQjpPcV9oVWphSW5fRTZ4VUxXVmVxcFlneVBib05McHhqOG04UG8xbDFi"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.132.29"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/payment": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "1.建立訂單",
+        "description": "",
+        "operationId": "1.建立訂單",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "pcpay-token",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "t9VJ_pM_b1U_QaGZu0hqBfucnRTDZtNaVSH_aewe"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.89.46"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "pay_type": [
+                    "ATM",
+                    "CARD",
+                    "ACCT",
+                    "EACH"
+                  ],
+                  "order_id": "20180328001",
+                  "amount": 100,
+                  "item_name": "您購買的商品",
+                  "item_url": "www.google.com",
+                  "return_url": "www.google.com"
+                },
+                "$ref": "#/components/schemas/1.建立訂單request"
+              },
+              "example": "{\"pay_type\":[\"ATM\",\"CARD\",\"ACCT\",\"EACH\"],\"order_id\":\"20180328001\",\"amount\":100,\"item_name\":\"您購買的商品\",\"item_url\":\"www.google.com\",\"return_url\":\"www.google.com\"}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://sandbox-api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/payment/000002409": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "6.查詢訂單",
+        "description": "",
+        "operationId": "6.查詢訂單",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "pcpay-token",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "zHQrWdgT0Nat7G9Pd6mD9F_h6gBv9VzocZWElIRH"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.132.29"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/refund": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "4.4建立退款",
+        "description": "",
+        "operationId": "4.4建立退款",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "pcpay-token",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "CQa2LH5RKZgD1DkSIkSnDHb85fNSwU_OMhmzEEbO"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.132.29"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "order_id": "000002057",
+                  "refund_id": "000002057",
+                  "trade_amount": 13720
+                },
+                "$ref": "#/components/schemas/4.4建立退款request"
+              },
+              "example": "{\"order_id\":\"000002057\",\"refund_id\":\"000002057\",\"trade_amount\":13720}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/refund/000000048": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "4.9查詢退款",
+        "description": "",
+        "operationId": "4.9查詢退款",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "pcpay-token",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "Mn900oVUBNwRSXr_fU5frkP84unWenhPLKyWm6eY"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.132.29"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/payment/audit": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "4.5訂單審單",
+        "description": "",
+        "operationId": "4.5訂單審單",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "pcpay-token",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "ge6Z8vNgrnTCG_gXNkIvCf4g17DNRAWrL3JtP5h9"
+            }
+          },
+          {
+            "name": "X-Forwarded-For",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "210.65.89.46"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "order_id": "000000037",
+                  "status": "PASS"
+                },
+                "$ref": "#/components/schemas/4.5訂單審單request"
+              },
+              "example": "{\"order_id\":\"000000037\",\"status\":\"PASS\"}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "httpBasic": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://sandbox-api.pchomepay.com.tw/v1",
+            "variables": {}
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "1.建立訂單request": {
+        "title": "1.建立訂單Request",
+        "required": [
+          "pay_type",
+          "order_id",
+          "amount",
+          "item_name",
+          "item_url",
+          "return_url"
+        ],
+        "type": "object",
+        "properties": {
+          "pay_type": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": [
+                "ATM",
+                "CARD",
+                "ACCT",
+                "EACH"
+              ]
+            },
+            "description": ""
+          },
+          "order_id": {
+            "type": "string",
+            "example": "20180328001"
+          },
+          "amount": {
+            "type": "integer",
+            "format": "int32",
+            "example": 100
+          },
+          "item_name": {
+            "type": "string",
+            "example": "您購買的商品"
+          },
+          "item_url": {
+            "type": "string",
+            "example": "www.google.com"
+          },
+          "return_url": {
+            "type": "string",
+            "example": "www.google.com"
+          }
+        },
+        "example": {
+          "pay_type": [
+            "ATM",
+            "CARD",
+            "ACCT",
+            "EACH"
+          ],
+          "order_id": "20180328001",
+          "amount": 100,
+          "item_name": "您購買的商品",
+          "item_url": "www.google.com",
+          "return_url": "www.google.com"
+        }
+      },
+      "4.4建立退款request": {
+        "title": "4.4建立退款Request",
+        "required": [
+          "order_id",
+          "refund_id",
+          "trade_amount"
+        ],
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string",
+            "example": "000002057"
+          },
+          "refund_id": {
+            "type": "string",
+            "example": "000002057"
+          },
+          "trade_amount": {
+            "type": "integer",
+            "format": "int32",
+            "example": 13720
+          }
+        },
+        "example": {
+          "order_id": "000002057",
+          "refund_id": "000002057",
+          "trade_amount": 13720
+        }
+      },
+      "4.5訂單審單request": {
+        "title": "4.5訂單審單Request",
+        "required": [
+          "order_id",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string",
+            "example": "000000037"
+          },
+          "status": {
+            "type": "string",
+            "example": "PASS"
+          }
+        },
+        "example": {
+          "order_id": "000000037",
+          "status": "PASS"
+        }
+      }
+    },
+    "securitySchemes": {
+      "httpBasic": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    }
+  },
+  "security": [
+    {
+      "httpBasic": []
+    }
+  ]
+}

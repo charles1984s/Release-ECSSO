@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CheckBox1Resource1.Text" xml:space="preserve">
+    <value>已閱讀並同意接受會員服務條款</value>
+  </data>
+  <data name="CheckBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox1Resource2.Text" xml:space="preserve">
+    <value>我同意加入易售聯網會員</value>
+    <comment>我同意加入易售聯網會員</comment>
+  </data>
+  <data name="CheckBox1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckUserIDResource1.Text" xml:space="preserve">
+    <value>請輸入帳號</value>
+    <comment>請輸入帳號</comment>
+  </data>
+  <data name="CheckUserIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckUserPwdResource1.Text" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>請輸入密碼</comment>
+  </data>
+  <data name="CheckUserPwdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image1Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>＊姓名／名稱：</value>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>＊生日：</value>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>＊聯絡電話：</value>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>＊行動電話：</value>
+  </data>
+  <data name="Label13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14Resource1.Text" xml:space="preserve">
+    <value>格式:09xx-xxxxxx</value>
+  </data>
+  <data name="Label14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label15Resource1.Text" xml:space="preserve">
+    <value>＊地址：</value>
+  </data>
+  <data name="Label15Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label16Resource1.Text" xml:space="preserve">
+    <value>＊密碼：</value>
+  </data>
+  <data name="Label16Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label17Resource1.Text" xml:space="preserve">
+    <value>（填入4至20個字元的英文字母、數字組合。）</value>
+  </data>
+  <data name="Label17Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label18Resource1.Text" xml:space="preserve">
+    <value>＊電子信箱：</value>
+    <comment>＊電子信箱：</comment>
+  </data>
+  <data name="Label18Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label19Resource1.Text" xml:space="preserve">
+    <value>（請再輸入一次設定密碼）</value>
+    <comment>＊電子信箱：</comment>
+  </data>
+  <data name="Label19Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label20Resource1.Text" xml:space="preserve">
+    <value>會員服務條款</value>
+  </data>
+  <data name="Label20Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label21Resource1.Text" xml:space="preserve">
+    <value>＊驗證碼：</value>
+  </data>
+  <data name="Label21Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label22Resource1.Text" xml:space="preserve">
+    <value>請輸入正確驗證碼</value>
+  </data>
+  <data name="Label22Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label23Resource1.Text" xml:space="preserve">
+    <value>確認密碼：</value>
+  </data>
+  <data name="Label23Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label25Resource1.Text" xml:space="preserve">
+    <value>您也可以選擇下面選項，快速加入/登入會員</value>
+    <comment>您也可以選擇下面選項，快速加入/登入會員</comment>
+  </data>
+  <data name="Label25Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label26Resource1.Text" xml:space="preserve">
+    <value>格式：yyyy-MM-dd</value>
+    <comment>格式：yyyy-MM-dd</comment>
+  </data>
+  <data name="Label26Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>帳號：</value>
+    <comment>帳號：</comment>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>密碼：</value>
+    <comment>密碼：</comment>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>驗證碼：</value>
+    <comment>驗證碼：</comment>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>會員登入</value>
+    <comment>會員登入</comment>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>建議您使用IE9.0 以上的瀏覽器| 螢幕解析度請設為 1280*1024 以上</value>
+    <comment>建議您使用IE9.0 以上的瀏覽器| 螢幕解析度請設為 1280*1024 以上</comment>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>我要註冊成為會員</value>
+    <comment>我要註冊成為會員</comment>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>格式:XX-XXXXXXX</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>※若您一直未收到通知信函，可檢查您的垃圾信件匣，&lt;br&gt;因有可能被郵件系統誤認為是垃圾信件。</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton1Resource1.Text" xml:space="preserve">
+    <value>
+                                    &lt;span class='glyphicon glyphicon-ok-circle' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    登　入</value>
+    <comment>&lt;span class='glyphicon glyphicon-ok-circle' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    登　入</comment>
+  </data>
+  <data name="LinkButton1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton2Resource1.Text" xml:space="preserve">
+    <value>
+                                    &lt;span class='glyphicon glyphicon-log-in' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    忘記密碼</value>
+    <comment>&lt;span class='glyphicon glyphicon-log-in' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    忘記密碼</comment>
+  </data>
+  <data name="LinkButton2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton3Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-user" style="font-size:large; margin-right:33px; margin-left:8px;"&gt;&lt;/span&gt;
+                        &lt;span style="margin-right:46px;"&gt;加入本站會員&lt;/span&gt;</value>
+    <comment>&lt;span class="glyphicon glyphicon-user" style="font-size:large; margin-right:33px; margin-left:8px;"&gt;&lt;/span&gt;
+                        &lt;span style="margin-right:46px;"&gt;加入本站會員&lt;/span&gt;</comment>
+  </data>
+  <data name="LinkButton3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton4Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-user" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;
+                    確認送出</value>
+  </data>
+  <data name="LinkButton7Resource1.Text" xml:space="preserve">
+    <value>&lt;span class='glyphicon glyphicon-home' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    回網站</value>
+    <comment>&lt;span class='glyphicon glyphicon-home' style='font-size:large; margin-right:7px;'&gt;&lt;/span&gt;
+                                    回網站</comment>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>先生</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>小姐</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StringResource1" xml:space="preserve">
+    <value>請輸入帳號</value>
+    <comment>請輸入帳號</comment>
+  </data>
+  <data name="StringResource10" xml:space="preserve">
+    <value>請輸入地址</value>
+    <comment>請輸入地址</comment>
+  </data>
+  <data name="StringResource11" xml:space="preserve">
+    <value>帳號重複</value>
+    <comment>帳號重複</comment>
+  </data>
+  <data name="StringResource12" xml:space="preserve">
+    <value>親愛的會員，您好！歡迎加入</value>
+    <comment>親愛的會員，您好！歡迎加入</comment>
+  </data>
+  <data name="StringResource13" xml:space="preserve">
+    <value>會員</value>
+    <comment>會員</comment>
+  </data>
+  <data name="StringResource14" xml:space="preserve">
+    <value>以下是您的帳號資料，請熟記以下重要訊息</value>
+    <comment>以下是您的帳號資料，請熟記以下重要訊息</comment>
+  </data>
+  <data name="StringResource15" xml:space="preserve">
+    <value>您的帳號</value>
+    <comment>您的帳號</comment>
+  </data>
+  <data name="StringResource16" xml:space="preserve">
+    <value>您的密碼</value>
+    <comment>您的密碼</comment>
+  </data>
+  <data name="StringResource17" xml:space="preserve">
+    <value>開通帳號網址：</value>
+    <comment>開通帳號網址：</comment>
+  </data>
+  <data name="StringResource18" xml:space="preserve">
+    <value>為了啟動你的帳號，請點選連結或是複製連結在瀏覽器上貼上</value>
+    <comment>為了啟動你的帳號，請點選連結或是複製連結在瀏覽器上貼上</comment>
+  </data>
+  <data name="StringResource19" xml:space="preserve">
+    <value>感謝您的加入！</value>
+    <comment>感謝您的加入！</comment>
+  </data>
+  <data name="StringResource2" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>請輸入密碼</comment>
+  </data>
+  <data name="StringResource20" xml:space="preserve">
+    <value>提醒您：此封『會員通知』為系統發出，請勿直接回覆。</value>
+    <comment>提醒您：此封『會員通知』為系統發出，請勿直接回覆。</comment>
+  </data>
+  <data name="StringResource21" xml:space="preserve">
+    <value>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</value>
+    <comment>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</comment>
+  </data>
+  <data name="StringResource22" xml:space="preserve">
+    <value>若有上述情形，請立即撥打165防詐騙專線查詢</value>
+    <comment>若有上述情形，請立即撥打165防詐騙專線查詢</comment>
+  </data>
+  <data name="StringResource23" xml:space="preserve">
+    <value>會員編號</value>
+    <comment>會員編號</comment>
+  </data>
+  <data name="StringResource24" xml:space="preserve">
+    <value>已於</value>
+    <comment>已於</comment>
+  </data>
+  <data name="StringResource25" xml:space="preserve">
+    <value>加入會員</value>
+    <comment>加入會員</comment>
+  </data>
+  <data name="StringResource26" xml:space="preserve">
+    <value>加入會員通知</value>
+    <comment>加入會員通知</comment>
+  </data>
+  <data name="StringResource27" xml:space="preserve">
+    <value>系統將立即寄發『加入會員通知』信函至您所登錄之E-Mail中，您必須完成帳號開通程序後，才能登入網站與使用會員功能，此信函中包含您所設定之登錄帳號(即E-mail)、密碼。請靜候開通帳號通知信。</value>
+    <comment>系統將立即寄發『加入會員通知』信函至您所登錄之E-Mail中，您必須完成帳號開通程序後，才能登入網站與使用會員功能，此信函中包含您所設定之登錄帳號(即E-mail)、密碼。請靜候開通帳號通知信。</comment>
+  </data>
+  <data name="StringResource28" xml:space="preserve">
+    <value>客服中心</value>
+    <comment>客服中心</comment>
+  </data>
+  <data name="StringResource29" xml:space="preserve">
+    <value>您尚未同意服務條款</value>
+    <comment>您尚未同意服務條款</comment>
+  </data>
+  <data name="StringResource3" xml:space="preserve">
+    <value>登入失敗。帳號或密碼錯誤，或是您尚未成為會員。</value>
+    <comment>登入失敗。帳號或密碼錯誤，或是您尚未成為會員。</comment>
+  </data>
+  <data name="StringResource30" xml:space="preserve">
+    <value>電子信箱格式錯誤</value>
+    <comment>電子信箱格式錯誤</comment>
+  </data>
+  <data name="StringResource31" xml:space="preserve">
+    <value>密碼長度請輸入4至20個英文或數字</value>
+    <comment>密碼長度請輸入4至20個英文或數字</comment>
+  </data>
+  <data name="StringResource4" xml:space="preserve">
+    <value>請輸入正確驗證碼</value>
+    <comment>請輸入正確驗證碼</comment>
+  </data>
+  <data name="StringResource5" xml:space="preserve">
+    <value>密碼與確認密碼不同</value>
+    <comment>密碼與確認密碼不同</comment>
+  </data>
+  <data name="StringResource6" xml:space="preserve">
+    <value>請輸入您的名字</value>
+    <comment>請輸入您的名字</comment>
+  </data>
+  <data name="StringResource7" xml:space="preserve">
+    <value>請輸入正確日期(YYYY-MM-DD)</value>
+    <comment>請輸入正確日期</comment>
+  </data>
+  <data name="StringResource8" xml:space="preserve">
+    <value>聯絡電話格式錯誤</value>
+    <comment>聯絡電話格式錯誤</comment>
+  </data>
+  <data name="StringResource9" xml:space="preserve">
+    <value>行動電話格式錯誤</value>
+    <comment>行動電話格式錯誤</comment>
+  </data>
+  <data name="TextBox1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserPwdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserPwdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

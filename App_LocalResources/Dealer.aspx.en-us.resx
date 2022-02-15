@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridView1Resource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridView1Resource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridView1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton1Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-ok-sign" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;Buy</value>
+    <comment>&lt;span class="glyphicon glyphicon-ok-sign" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;確認購買</comment>
+  </data>
+  <data name="LinkButton1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton2Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-home" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;Home</value>
+    <comment>&lt;span class="glyphicon glyphicon-home" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;回網站首頁</comment>
+  </data>
+  <data name="LinkButton2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton3Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-remove" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;Logout</value>
+    <comment>&lt;span class="glyphicon glyphicon-remove" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;登出</comment>
+  </data>
+  <data name="LinkButton3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QTYResource1.Text" xml:space="preserve">
+    <value>0</value>
+    <comment>0</comment>
+  </data>
+  <data name="QTYResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>x</value>
+    <comment>x</comment>
+  </data>
+  <data name="RegularExpressionValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StringResource1" xml:space="preserve">
+    <value>The order will not be able to be amended(edit or cancel) on user interface. Please contact with our Customer Service if the order needs to be amended.</value>
+    <comment>訂單內容即無法在網站前台中做異動(修改與刪除)。若需修改訂單需電洽服務人員</comment>
+  </data>
+  <data name="StringResource10" xml:space="preserve">
+    <value>Product Code</value>
+    <comment>料號</comment>
+  </data>
+  <data name="StringResource11" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>數量</comment>
+  </data>
+  <data name="StringResource12" xml:space="preserve">
+    <value>Reminder: our customer service team will not ask you to change user name or to re-arrange remittance by ATM machine in any circumstances.</value>
+    <comment>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</comment>
+  </data>
+  <data name="StringResource13" xml:space="preserve">
+    <value>If any of above situation occurs, please call anti-fraud hotline 165 immediately.</value>
+    <comment>若有上述情形，請立即撥打165防詐騙專線查詢</comment>
+  </data>
+  <data name="StringResource14" xml:space="preserve">
+    <value>Details of shopped items</value>
+    <comment>訂購通知</comment>
+  </data>
+  <data name="StringResource15" xml:space="preserve">
+    <value>Order Received</value>
+    <comment>訂購完成</comment>
+  </data>
+  <data name="StringResource16" xml:space="preserve">
+    <value>Out of stock</value>
+    <comment>庫存不足</comment>
+  </data>
+  <data name="StringResource17" xml:space="preserve">
+    <value>You have not selected any items yet.</value>
+    <comment>您尚未選購</comment>
+  </data>
+  <data name="StringResource18" xml:space="preserve">
+    <value>Customer Service</value>
+    <comment>客服中心</comment>
+  </data>
+  <data name="StringResource2" xml:space="preserve">
+    <value />
+    <comment>親愛的會員，您好！</comment>
+  </data>
+  <data name="StringResource3" xml:space="preserve">
+    <value>Dear member, thank you very much for your order ! Below content is your order details(not receipt of payment), some of below information is marked as '**' in accordance with information security policy.</value>
+    <comment>非常感謝您的訂購，以下為您的訂購清單，而非付款收據，為保障您的資訊安全，部份訊息將以'*'標記。</comment>
+  </data>
+  <data name="StringResource4" xml:space="preserve">
+    <value>Order Number</value>
+    <comment>訂單編號</comment>
+  </data>
+  <data name="StringResource5" xml:space="preserve">
+    <value>Buyer's name</value>
+    <comment>訂購人</comment>
+  </data>
+  <data name="StringResource6" xml:space="preserve">
+    <value>Mobile phone no.</value>
+    <comment>手機</comment>
+  </data>
+  <data name="StringResource7" xml:space="preserve">
+    <value>Phone no.</value>
+    <comment>電話</comment>
+  </data>
+  <data name="StringResource8" xml:space="preserve">
+    <value>Email Address</value>
+    <comment>電子信箱</comment>
+  </data>
+  <data name="StringResource9" xml:space="preserve">
+    <value>Details of shopped items</value>
+    <comment>訂購項目</comment>
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value>No.</value>
+    <comment>序號</comment>
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>Item</value>
+    <comment>品項</comment>
+  </data>
+  <data name="TemplateFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value>Spec</value>
+    <comment>產品規格</comment>
+  </data>
+  <data name="TemplateFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.HeaderText" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>訂購數量</comment>
+  </data>
+  <data name="TemplateFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.HeaderText" xml:space="preserve">
+    <value>Image</value>
+    <comment>產品圖</comment>
+  </data>
+  <data name="TemplateFieldResource6.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.HeaderText" xml:space="preserve">
+    <value>Product Code</value>
+    <comment>料號</comment>
+  </data>
+  <data name="TemplateFieldResource7.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.HeaderText" xml:space="preserve">
+    <value>Stock</value>
+    <comment>庫存量</comment>
+  </data>
+  <data name="TextBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

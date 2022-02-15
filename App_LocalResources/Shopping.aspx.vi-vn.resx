@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cellResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cellResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox1Resource1.Text" xml:space="preserve">
+    <value>Giống thông tin người đặt hàng</value>
+    <comment>同訂購人資訊</comment>
+  </data>
+  <data name="CheckBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlzipResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+    <comment>地址：</comment>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>Ghi chú：</value>
+    <comment>備註：</comment>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>Đề xuất sử dụng trình duyệt IE9.0, độ phân giải màn hình 1280*1024 trở lên</value>
+    <comment>建議您使用IE9.0 以上的瀏覽器| 螢幕解析度請設為 1280*1024 以上</comment>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Thông tin đặt hàng</value>
+    <comment>訂購資訊</comment>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Tên người mua</value>
+    <comment>姓名：</comment>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Điện thoại</value>
+    <comment>電話：</comment>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Di động</value>
+    <comment>手機：</comment>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Email</value>
+    <comment>電子信箱：</comment>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Thông tin người nhận hàng</value>
+    <comment>收件人資訊</comment>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Họ tên người nhận</value>
+    <comment>姓名：</comment>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Điện thoại</value>
+    <comment>電話：</comment>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Di động</value>
+    <comment>手機：</comment>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkButton1Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-shopping-cart"&gt;&lt;/span&gt;Thanh toán</value>
+    <comment>&lt;span class="glyphicon glyphicon-shopping-cart"&gt;&lt;/span&gt;結帳</comment>
+  </data>
+  <data name="LinkButton1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Anh</value>
+    <comment>先生</comment>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Chị</value>
+    <comment>小姐</comment>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Anh</value>
+    <comment>先生</comment>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Chị</value>
+    <comment>小姐</comment>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="nameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="nameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="notememoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="notememoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_cellResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_cellResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_nameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_nameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_sexResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_telResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="o_telResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ Email</value>
+    <comment>請輸入正確電子信箱</comment>
+  </data>
+  <data name="RegularExpressionValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập tên người đặt hàng</value>
+    <comment>請輸入訂購者人名</comment>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại người đặt hàng</value>
+    <comment>請輸入訂購人電話</comment>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại di động người đặt hàng</value>
+    <comment>請輸入訂購人手機</comment>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập tên người nhận hàng</value>
+    <comment>請輸入收件人名</comment>
+  </data>
+  <data name="RequiredFieldValidator4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator5Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại người nhận hàng</value>
+    <comment>請輸入收件人電話</comment>
+  </data>
+  <data name="RequiredFieldValidator5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator6Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại di động người nhận hàng</value>
+    <comment>請輸入收件人手機</comment>
+  </data>
+  <data name="RequiredFieldValidator6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator7Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ</value>
+    <comment>請輸入收件地址</comment>
+  </data>
+  <data name="RequiredFieldValidator7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator8Resource1.ErrorMessage" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ Email</value>
+    <comment>請輸入電子信箱</comment>
+  </data>
+  <data name="RequiredFieldValidator8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="sexResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="telResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="telResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StringResource1" xml:space="preserve">
+    <value>&lt;i class="fa fa-book" aria-hidden="true"&gt;&lt;/i&gt;Chi tiết mua hàng</value>
+    <comment>購物明細</comment>
+  </data>
+  <data name="StringResource10" xml:space="preserve">
+    <value>Thành tiền</value>
+    <comment>商品總計</comment>
+  </data>
+  <data name="StringResource11" xml:space="preserve">
+    <value>Chương trình giảm giá ( Mua đủ</value>
+    <comment>折扣活動(滿1000元，折價100元)：</comment>
+  </data>
+  <data name="StringResource12" xml:space="preserve">
+    <value>VNĐ, giảm</value>
+    <comment>折扣活動(滿1000元，折價100元)：</comment>
+  </data>
+  <data name="StringResource13" xml:space="preserve">
+    <value>VNĐ )：</value>
+    <comment>折扣活動(滿1000元，折價100元)：</comment>
+  </data>
+  <data name="StringResource14" xml:space="preserve">
+    <value>Trừ chiết khấu</value>
+    <comment>紅利可扣抵金額</comment>
+  </data>
+  <data name="StringResource15" xml:space="preserve">
+    <value>Phí vận chuyển</value>
+    <comment>運費</comment>
+  </data>
+  <data name="StringResource16" xml:space="preserve">
+    <value>Số tiền cần thanh toán</value>
+    <comment>消費總計</comment>
+  </data>
+  <data name="StringResource17" xml:space="preserve">
+    <value>Lần mua sắm này có thưởng:</value>
+    <comment>本次購物可獲得紅利</comment>
+  </data>
+  <data name="StringResource18" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+    <comment>付款方式</comment>
+  </data>
+  <data name="StringResource19" xml:space="preserve">
+    <value>Dữ liệu lỗi, xin vui lòng đặt mua lại</value>
+    <comment>資料錯誤，請重新選購</comment>
+  </data>
+  <data name="StringResource2" xml:space="preserve">
+    <value>Số lượng</value>
+    <comment>數量</comment>
+  </data>
+  <data name="StringResource20" xml:space="preserve">
+    <value>Bộ phận chăm sóc khách hàng</value>
+    <comment>客服中心</comment>
+  </data>
+  <data name="StringResource21" xml:space="preserve">
+    <value>Dữ liệu lỗi, xin vui lòng đặt mua lại</value>
+    <comment>系統查無商品，請重新選購</comment>
+  </data>
+  <data name="StringResource22" xml:space="preserve">
+    <value>Lượng hàng không đủ, vui lòng chọn sản phẩm khác.</value>
+    <comment>庫存不足,請重新選購</comment>
+  </data>
+  <data name="StringResource23" xml:space="preserve">
+    <value />
+    <comment>親愛的會員，您好！</comment>
+  </data>
+  <data name="StringResource24" xml:space="preserve">
+    <value>Cám ơn bạn đã đặt hàng, chi tiết đơn đặt hàng dưới đây không thay thế cho phiếu thu khi thanh toán. Để bảo mật thông tin cho bạn, một số thông tin sẽ được đánh dấu "*".</value>
+    <comment>非常感謝您的訂購，以下為您的訂購清單，而非付款收據，為保障您的資訊安全，部份訊息將以'*'標記。</comment>
+  </data>
+  <data name="StringResource25" xml:space="preserve">
+    <value>Nếu bạn chuyển khoản bằng ATM, vui lòng chuyển khoản trong hai ngày kể từ ngày đặt hàng, và chủ động liên hệ với bộ phận chăm sóc khách hàng của chúng tôi để được hỗ trợ .</value>
+    <comment>若您使用ATM轉帳付款，請於訂購日起兩日內轉帳，繳費完成後請主動與公司客服聯絡。</comment>
+  </data>
+  <data name="StringResource26" xml:space="preserve">
+    <value>Nếu bạn sử dụng phương thức thanh toán khác hoặc thanh toán bằng tiền mặt khi nhận hàng, bạn có thể tra cứu chi tiết đơn hàng và tiến độ xử lý.</value>
+    <comment>若您使用其它付款方式或 貨到付款，您可以至訂單查詢了解訂單詳情與處理進度。</comment>
+  </data>
+  <data name="StringResource27" xml:space="preserve">
+    <value>Nếu điều kiện giao dịch bị lỗi, thiếu hàng, đăng sai giá hoặc những lý do khiến công ty không thể tiếp nhận đơn hàng, chúng tôi bảo lưu quyền quyết định giao hoặc không giao hàng.</value>
+    <comment>如因交易條件有誤、商品缺貨或價格誤刊或有其他本公司無法接受訂單之情形，本公司保留商品出貨與否的權利。</comment>
+  </data>
+  <data name="StringResource28" xml:space="preserve">
+    <value>Mã đơn đặt hàng</value>
+    <comment>訂單編號</comment>
+  </data>
+  <data name="StringResource29" xml:space="preserve">
+    <value>Người đặt hàng</value>
+    <comment>訂購人</comment>
+  </data>
+  <data name="StringResource3" xml:space="preserve">
+    <value>Đơn giá</value>
+    <comment>單價</comment>
+  </data>
+  <data name="StringResource30" xml:space="preserve">
+    <value>Di động</value>
+    <comment>手機</comment>
+  </data>
+  <data name="StringResource31" xml:space="preserve">
+    <value>Điện thoại</value>
+    <comment>電話</comment>
+  </data>
+  <data name="StringResource32" xml:space="preserve">
+    <value>Email</value>
+    <comment>電子信箱</comment>
+  </data>
+  <data name="StringResource33" xml:space="preserve">
+    <value>Người nhận hàng</value>
+    <comment>收件人</comment>
+  </data>
+  <data name="StringResource34" xml:space="preserve">
+    <value>Anh</value>
+    <comment>先生</comment>
+  </data>
+  <data name="StringResource35" xml:space="preserve">
+    <value>Chị</value>
+    <comment>小姐</comment>
+  </data>
+  <data name="StringResource36" xml:space="preserve">
+    <value>Địa chỉ</value>
+    <comment>地址</comment>
+  </data>
+  <data name="StringResource37" xml:space="preserve">
+    <value>Ghi chú</value>
+    <comment>備註</comment>
+  </data>
+  <data name="StringResource38" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+    <comment>料號</comment>
+  </data>
+  <data name="StringResource39" xml:space="preserve">
+    <value>Tổng chiết khấu đơn đặt hàng</value>
+    <comment>訂單總折扣</comment>
+  </data>
+  <data name="StringResource4" xml:space="preserve">
+    <value>Chiết khấu</value>
+    <comment>折扣</comment>
+  </data>
+  <data name="StringResource40" xml:space="preserve">
+    <value>Trừ chiết khấu</value>
+    <comment>紅利扣抵金額</comment>
+  </data>
+  <data name="StringResource41" xml:space="preserve">
+    <value>Số tiền sau khi giảm trừ (Đã bao gồm phí vận chuyển)</value>
+    <comment>扣抵後金額(含運費)</comment>
+  </data>
+  <data name="StringResource42" xml:space="preserve">
+    <value>Nếu bạn chọn hình thức chuyển khoản ATM, hiện tại vẫn chưa thanh toán thành công, vui lòng thanh toán theo hạn định và chủ động liên hệ với bộ phận chăm sóc khách hàng. Nếu quá hạn, đơn hàng sẽ tự hủy bỏ.</value>
+    <comment>提醒您選擇的付款式為ATM轉帳方式，目前尚未付款完成，請您於繳費期限內完成，繳費完成後請主動與公司客服聯絡。若逾期未付清款項將自動取消本訂單，謝謝。</comment>
+  </data>
+  <data name="StringResource43" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+    <comment>繳費資訊</comment>
+  </data>
+  <data name="StringResource44" xml:space="preserve">
+    <value>Swift code</value>
+    <comment>轉帳銀行代號</comment>
+  </data>
+  <data name="StringResource45" xml:space="preserve">
+    <value>Tài khoản chuyển khoản</value>
+    <comment>轉帳帳號</comment>
+  </data>
+  <data name="StringResource46" xml:space="preserve">
+    <value>Tên tài khoản</value>
+    <comment>戶名</comment>
+  </data>
+  <data name="StringResource47" xml:space="preserve">
+    <value>Số tiền phải trả</value>
+    <comment>應繳金額</comment>
+  </data>
+  <data name="StringResource48" xml:space="preserve">
+    <value>Thời hạn thanh toán</value>
+    <comment>繳費期限</comment>
+  </data>
+  <data name="StringResource49" xml:space="preserve">
+    <value>Cảnh giác: Nhân viên chăm sóc khách hàng không được phép yêu cầu bạn thay đổi tài khoản hoặc yêu cầu thực hiện lại lệnh chuyển khoản. Nếu gặp tình huống này, vui lòng gọi về bộ phận CSKH</value>
+    <comment>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</comment>
+  </data>
+  <data name="StringResource5" xml:space="preserve">
+    <value>Cộng</value>
+    <comment>小計</comment>
+  </data>
+  <data name="StringResource50" xml:space="preserve">
+    <value />
+    <comment>若有上述情形，請立即撥打165防詐騙專線查詢</comment>
+  </data>
+  <data name="StringResource51" xml:space="preserve">
+    <value>Thông báo đặt hàng</value>
+    <comment>訂購通知</comment>
+  </data>
+  <data name="StringResource6" xml:space="preserve">
+    <value>Ngày</value>
+    <comment>日</comment>
+  </data>
+  <data name="StringResource7" xml:space="preserve">
+    <value>giờ</value>
+    <comment>小時</comment>
+  </data>
+  <data name="StringResource8" xml:space="preserve">
+    <value>phút</value>
+    <comment>分</comment>
+  </data>
+  <data name="StringResource9" xml:space="preserve">
+    <value>Giá mua kèm</value>
+    <comment>加價購</comment>
+  </data>
+  <data name="StringResource52" xml:space="preserve">
+    <value>Dữ liệu lỗi, xin vui lòng đặt mua lại</value>
+    <comment>訂單數量有誤，請重新下單</comment>
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>Quay về trang trước</value>
+    <comment>回上一頁</comment>
+  </data>
+  <data name="Label13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StringResource53" xml:space="preserve">
+    <value>紅利折扣</value>
+    <comment>紅利折扣</comment>
+  </data>
+  <data name="CheckBox1Resource2.Text" xml:space="preserve">
+    <value>Join members</value>
+  </data>
+  <data name="StringResourceM12" xml:space="preserve">
+    <value>Chào mừng bạn đã gia nhập thành viên!</value>
+    <comment>親愛的會員，您好！歡迎加入</comment>
+  </data>
+  <data name="StringResourceM13" xml:space="preserve">
+    <value>Thành viên</value>
+    <comment>會員</comment>
+  </data>
+  <data name="StringResourceM14" xml:space="preserve">
+    <value>Vui lòng ghi nhớ thông tin tài khoản của bạn dưới đây:</value>
+    <comment>以下是您的帳號資料，請熟記以下重要訊息</comment>
+  </data>
+  <data name="StringResourceM15" xml:space="preserve">
+    <value>Tài khoản của bạn</value>
+    <comment>您的帳號</comment>
+  </data>
+  <data name="StringResourceM16" xml:space="preserve">
+    <value>Mật khẩu của bạn</value>
+    <comment>您的密碼</comment>
+  </data>
+  <data name="StringResourceM17" xml:space="preserve">
+    <value>Địa chỉ kích hoạt tài khoản：</value>
+    <comment>開通帳號網址：</comment>
+  </data>
+  <data name="StringResourceM18" xml:space="preserve">
+    <value>Để kích hoạt tài khoản, vui lòng nhấp chọn liên kết này, hoặc copy và paste vào trình duyệt của bạn.</value>
+    <comment>為了啟動你的帳號，請點選連結或是複製連結在瀏覽器上貼上</comment>
+  </data>
+  <data name="StringResourceM19" xml:space="preserve">
+    <value>Cám ơn bạn đã gia nhập</value>
+    <comment>感謝您的加入！</comment>
+  </data>
+  <data name="StringResourceM20" xml:space="preserve">
+    <value>Lưu ý: Đây là thông báo tự động, vui lòng không trả lời email này.</value>
+    <comment>提醒您：此封『會員通知』為系統發出，請勿直接回覆。</comment>
+  </data>
+  <data name="StringResourceM21" xml:space="preserve">
+    <value>Cảnh giác: Nhân viên chăm sóc khách hàng không được phép yêu cầu bạn thay đổi tài khoản hoặc yêu cầu thực hiện lại lệnh chuyển khoản. Nếu gặp tình huống này, vui lòng gọi về bộ phận CSKH.</value>
+    <comment>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</comment>
+  </data>
+  <data name="StringResourceM22" xml:space="preserve">
+    <value />
+    <comment>若有上述情形，請立即撥打165防詐騙專線查詢</comment>
+  </data>
+  <data name="StringResourceM23" xml:space="preserve">
+    <value>Mã thành viên</value>
+    <comment>會員編號</comment>
+  </data>
+  <data name="StringResourceM24" xml:space="preserve">
+    <value>Đã đăng ký thành viên lúc</value>
+    <comment>已於</comment>
+  </data>
+  <data name="StringResourceM25" xml:space="preserve">
+    <value>Đăng ký thành viên</value>
+    <comment>加入會員</comment>
+  </data>
+  <data name="StringResourceM26" xml:space="preserve">
+    <value>Thông báo đăng ký thành viên</value>
+    <comment>加入會員通知</comment>
+  </data>
+  <data name="StringResourceM27" xml:space="preserve">
+    <value>Hệ thống sẽ gửi "Thông báo đăng ký thành viên" vào địa chỉ e-mail bạn cung cấp, nội dung bao gồm tên tài khoản đăng nhập (e-mail), mật khẩu và liên kết kích hoạt tài khoản. Vui lòng nhấp chọn liên kết này để hoàn thành việc đăng ký thành viên.</value>
+    <comment>系統將立即寄發『加入會員通知』信函至您所登錄之E-Mail中，您必須完成帳號開通程序後，才能登入網站與使用會員功能，此信函中包含您所設定之登錄帳號(即E-mail)、密碼。請靜候開通帳號通知信。</comment>
+  </data>
+</root>

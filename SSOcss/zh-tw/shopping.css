@@ -1,0 +1,121 @@
+﻿div { border: 0px; } 
+body{font-family:Arial,微軟正黑體,新細明體, Helvetica, sans-serif; color:#333333;}
+.shoppingdetail{border:1px #D4D4D4 dotted;border-bottom:none;}
+.shoppinggraybg{background-color:#f5f5f5;}
+.shoppingwhitebg{background-color:#ffffff;padding-left:3px;}
+.shoppingred{color:#d60000; font-weight:bold;}
+.shoppingline{border-top:solid 1px #d4d4d4;}
+.fontright{text-align:right;}
+.fontcenter{text-align:center;}
+#foot { background-repeat:no-repeat; color:#898989;}
+.fa.fa-book {padding-right: 5px;}
+.orderitem {text-align:right; padding-top: 5px; white-space: nowrap;padding-right: 5px !important;}
+.orderitem2 {background-color:#f5f5f5; margin-left:-5px; margin-right:-5px;}
+.orderitem3 {border-left:1px dotted #d4d4d4;}
+.orderitem3 row {}
+.orderitem4 {border-bottom:1px dotted #d4d4d4;margin-top: 15px;}
+.table-bordered>tbody>tr>td {border:1px dotted #d4d4d4;}
+.table-bordered>thead>tr>th {border:1px dotted #d4d4d4; background-color:#f5f5f5; text-align:center;}
+.table{margin-bottom:0px;}
+tr.menuGroup {background: #fed;color: #b30;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+#shoppingcar>.row-fluid:nth-child(2)>.col-md-12 { font-size:14pt; font-weight:bold;}
+#shoppingcar>.row-fluid:last-child>.col-md-12 { font-size:16pt !important;}
+#RequiredFieldValidator8[style*="hidden"],#RegularExpressionValidator1[style*="hidden"],[id*="RequiredFieldValidator"][style*="hidden"] {display: none;}
+.container>.row{ margin-left:25px;}
+.container>.row>.formInput>.col-md-1{ text-align:right; padding-right:0;background-color: #f5f5f5;height: 30px;padding-top: 5px;padding-right: 2px;width: 7.9999999%;    margin-left: 25px;padding-left: 0;}
+.container>.row>.formInput>.col-md-11{ padding-left:1px; width: 89%;}
+#CVSdiv .title {display: block;/*float: left;background-color:#f5f5f5;height: 28px;line-height: 28px; width: 8.333333%*/;text-align: right;padding-right: 5px;}
+#CVSdiv>.col-md-12 {padding-left: 10px;}
+.container>.row>.formInput>.col-md-11>input {width: 80% !important;  border: #b9b9b9 1px solid;}
+input{border: #b9b9b9 1px solid;}
+#o_sex,#sex{height: 19pt; vertical-align: middle;}
+#ddlCity,#ddlCountry,#ddlzip{height: 19pt; vertical-align:bottom;}
+#AddMember,#invoice {background-color:#f5f5f5; position:relative; padding:10px 0; min-width: 50%; border:solid #CCC 1px; border-right:0; border-left:0; overflow:hidden; margin:5px 15px; -ms-user-select:none; -webkit-user-select: none; user-select:none;}
+#AddMember>div,#invoice>div{padding:5px;}
+#AddMember>div:last-child{padding:0; display:inline-block;}
+#AddMember .title,#invoice .title{text-align:right; padding:10px 0;}
+#AddMember .title+div,#invoice .title+div{padding-left:10px;}
+
+#formRelation > .row > div { margin-bottom: 1rem;}
+#formRelation > .row > div label { display: block; padding-left: 0.5rem;}
+#formRelation > .row > div label.must:before { position: absolute; left: 1.35rem; content: "*"; color: #F00;}
+#formRelation > .row > div label+div { position: relative;}
+#formRelation > .row > div label+div>input { border: none; border-bottom: 1px solid #CCC; width: 100%; text-align: center; overflow: hidden; background: transparent;}
+#formRelation > .row > div .other+label>input { border: none; border-bottom: 1px solid #CCC; text-align: center; overflow: hidden; background: transparent;}
+#formRelation > .row > div .memo { position: absolute; right: 3%; bottom: 10%; color: red; font-size: 0.9rem;}
+#formRelation > .row > div *:focus { outline: none;}
+#formRelation > .row > div .items, #formRelation > .row > div .items * { display: inline-block;  vertical-align: middle; margin: 0;}
+#formRelation > .row > div .items { margin-right: 2rem;}
+#formRelation > .row > div .items label i{ display: none;}
+#formRelation > .row > div textarea { border: 1px solid #CCC; width: 100%; min-height: 90px; padding: 0.5rem 1rem;}
+#formRelation > .row > div select { border: 1px solid #CCC; background: transparent; width: 100%; padding: 0.5rem;}
+
+#orderTable + .table { margin-top: 1rem;}
+#Label1, #Label6, #CheckBox1 + label { font-size: 13pt;	font-weight: bold;}
+#orderTable.inquiry { font-size: 1.5rem;}
+
+@media (max-width: 994px) {
+	#formRelation > .row > div .items{margin-bottom: 0.5rem;}
+}
+@media (max-width: 994px) {
+    .orderitem{text-align:left; padding-left:0px;}
+    .orderitem2 {background-color:#ffffff; margin-left:0px; margin-right:0px;}
+    .orderitem3 {border-left:none;}            
+    .orderitem4 {border-bottom:none;}
+}
+@media (max-width: 500px) {
+			
+	.orderitem3 {padding-top: 15px !important;}
+	.container>.row {margin-left: 30px;}
+	.container>.row .title {display: block;float: left;}
+	.container>.row>.formInput>.col-md-1 {background-color: #fff;padding-left:0;height: 20px;  width: 19.333333%;}
+	.container>.row>.formInput>.col-md-11>input {width: 90% !important;}
+	.container>.row>.formInput>.col-md-11 {padding-left: 33px;}
+	#o_name, #name {width: 75% !important;}
+	#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 94% !important;}
+	[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;}
+	.container>.row>.formInput>.col-md-12{ text-align:center;padding-left: 0;}
+	#CVSdiv>.col-md-12{text-align:left;padding-left: 15px;}
+	.orderitem {text-align: left;padding-top: 5px;white-space: nowrap;padding-right: 5px !important;}
+	.orderitem2 {background-color: #fff;}
+    #AddMember .title{ padding:7px;}
+}
+@media (max-width: 994px) and (orientation: landscape) {
+	/*.orderitem{text-align:right;}*/
+	.orderitem3 {padding-top: 15px !important;}
+	.container>.row {margin-left: 30px;}
+	.container>.row .title {display: block;float: left;}
+	.container>.row>.formInput>.col-md-1 {background-color: #fff;padding-left:0;padding-right:0;height: 25px; width: 14.333333%;}
+	.container>.row>.formInput>.col-md-11>input {width: 95% !important;}
+	.container>.row>.formInput>.col-md-11 {padding-left: 25px;}
+	#o_name, #name {width: 87% !important;}
+	#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 97% !important;}
+	[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;}
+	.container>.row>.formInput>.col-md-12{ text-align:center;padding-left: 0;}
+	#CVSdiv>.col-md-12{text-align:left;padding-left: 10px;}
+			
+}
+@media (min-width: 501px) and (orientation: portrait) {
+	.orderitem3 {padding-top: 15px !important;}
+	.container>.row {margin-left: 30px;}
+	.container>.row .title {display: block;float: left;}
+	.container>.row>.formInput>.col-md-1 {background-color: #fff;padding-left:0;height: 20px;  width: 14.333333%;}
+	.container>.row>.formInput>.col-md-11>input {width: 95% !important;}
+	.container>.row>.formInput>.col-md-11 {padding-left: 33px;}
+	#o_name, #name {width: 84% !important;}
+	#o_tel, #tel, #o_cell, #cell, #mail, #notememo, #address { width: 97% !important;}
+	[id*="RequiredFieldValidator"],#RegularExpressionValidator1 {display: block;text-align: center;}
+	.container>.row>.formInput>.col-md-12{ text-align:center;padding-left: 0;}
+	#CVSdiv>.col-md-12{text-align:left;padding-left: 15px;}
+			
+	}
+			
+@media (min-width: 768px){
+	.orderitem{text-align:right;}
+}
+@media (max-width: 486px) {
+	#formRelation > .row > div .items .other+label { width: 90%;}
+	#formRelation > .row > div .items .other+label input { width: 75%;}
+	#formRelation > .row > div .memo { bottom: 0; top: -30%;}
+}
+		

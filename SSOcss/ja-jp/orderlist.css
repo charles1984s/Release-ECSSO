@@ -1,0 +1,67 @@
+﻿a{color:#000;}
+div { border: 0px; } 
+body{font-family:Arial,微軟正黑體,新細明體, Helvetica, sans-serif; color:#333333;}
+.container.tabs01 {
+padding: 0;
+}
+.col-md-1 {width: 8.33333333%;}
+.col-md-2 {width: 16.66666667%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33333333%;}
+.col-md-5 {width: 41.66666667%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33333333%;}
+.col-md-8 {width: 66.66666667%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33333333%;}
+.col-md-11 {width: 91.66666667%;}
+.col-md-12 {width: 100%;}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {float: left;}
+#foot { background-image:url("/img/infooter.jpg"); background-repeat:no-repeat; color:#898989; background-color:#f9f9f9;}
+.container{padding:20px 0;}
+.listitem{padding-bottom:15px;}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {border-top: 0;border-bottom: 0;}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {border-top: 0;border-bottom: 0;}
+.panel.panel-default>div>a>.row>div:nth-child(2) {/*font-size: 9pt; vertical-align:middle;*/font-weight:bold;}
+.panel.panel-default>div>a>.row>div:nth-child(1) {color: #000;font-size: 14pt;font-weight: bold;}
+table {margin-bottom: 0;}
+table tr>th{text-align:center;}
+table tr>td:nth-child(2), table tr>td:last-child, table tr>th:nth-child(2) {text-align: left;}
+table thead{background-color: #fef4ec;}
+table tbody>tr:last-child{ text-align:right;/*border-top: 1px #ddd solid;*/}
+table.table.table-striped.table-bordered .finaltr {text-align:right; border-top:1px solid #ddd;}
+table.table.table-striped.table-bordered .finaltr>td{ background:none;border: 0px; }
+table.table.table-striped.table-bordered .finaltr>td:nth-child(4), table.table.table-striped.table-bordered .finaltr>td:nth-child(4){text-align:right;}
+table.table.table-striped.table-bordered .finaltr>td:nth-child(2), table.table.table-striped.table-bordered .finaltr>td:nth-child(2){text-align:right;}
+.table.table-striped.table-bordered .pray_tr1 td,.table.table-striped.table-bordered .pray_tr2 td,.table.table-striped.table-bordered .pray_tr3 td{ text-align: left; border:0px; background:none;}
+.pray_tr1{background-color: #e3e3e3;border-top: 1px solid #ddd;}
+.pray_tr2{/*background-color: #ededed;*/}
+.pray_tr3{/*background-color: #f8f8f8;*/border-bottom: 1px solid #ddd;}
+#Label6{ color:#f00;}
+.panel-body.QA input[type="button"] {
+    background: #fef4ec;
+    border: 1px solid #f0cdb1;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    padding: 5px 20px;
+    color: #666;
+    font-weight: bold;
+}
+.panel-body.QA input[type="button"]:hover{
+    background: #ffe5d0;
+    border: 1px solid #e6ac7d;
+}
+@media (max-width: 991px){
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {width: 100%;padding: 0px 10%;}  
+	/*.container>.row-fluid>div:first-child {display: none;}*/
+	.container>.row-fluid>div:first-child, .container>.row-fluid>div:first-child>div {padding: 0;}
+	.panel.panel-default .row>div:first-child{ font-size:16pt; font-weight:bold;}
+	.panel.panel-default .row>div:first-child {font-size: 16pt;font-weight: bold;border-bottom: 1px dashed #ccc;margin: auto;width: 90%;float: none;margin-bottom: 5px;}
+	.panel.panel-default .row>div {border-bottom: 1px dotted #ccc;padding: 3px 10%;width: 90%;float: none;margin: auto;color: #666;}
+	#OrdersList a:hover{text-decoration: inherit; }
+	.container>.row-fluid>div:first-child {padding: 10px;background-color: #e5e5e5;border: 1px solid #ddd;margin-bottom: 5px;border-radius: 3px;}
+	.container>.row-fluid>div:first-child>div {width: 33.3%;text-align: center;}
+	#OrdersList .row>div {width: 33.3%;float: left;padding: 0;margin: 0;text-align: center;height: 25px;overflow: hidden;}
+	#OrdersList .row>div:last-child {width: 100%;}
+}

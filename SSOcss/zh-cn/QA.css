@@ -1,0 +1,37 @@
+﻿a{color:#000;}
+div { border: 0px; } 
+body{font-family:Arial,微軟正黑體,新細明體, Helvetica, sans-serif; color:#333333;}
+.container,#QAList{ padding:0px;}
+.container.tabs01 {padding: 0;}
+.col-md-12.listitem{}
+.col-md-12.listitem>.row-fluid {
+	padding: 10px 0;
+	background: #f3f3f3;
+	display: table;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-top: 10px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #428bca;
+}
+#QAList>.panel.panel-default {
+	border: 0;
+	box-shadow: none;
+	border-radius: 0px;
+	border-bottom: 1px solid #ddd;
+	margin: 0px;
+}
+#QAList>.panel.panel-default>.panel-heading {
+	background: none;
+	border: 0;
+	padding: 5px 15px;
+}
+@media (max-width: 992px) {
+	.col-md-12.listitem>.row-fluid {display: none;}
+	#QAList .row>div:first-child {color: #999;}
+	#QAList .row>div:nth-child(2) {font-size: 17pt;font-weight: bold;}
+	#QAList .row>div:nth-child(3):before { content:'Q：'}
+	#QAList .row>div:nth-child(4):before { content:'A：'}
+}

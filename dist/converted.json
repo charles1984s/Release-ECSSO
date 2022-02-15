@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "智慧旅運",
+    "description": "TODO: Add Description",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://bak_rd.hawk.net.tw/api",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/Authorization.ashx": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "驗證",
+        "description": "",
+        "operationId": "驗證",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  }
+}

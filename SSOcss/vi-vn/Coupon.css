@@ -1,0 +1,39 @@
+﻿body {
+	font-family: Arial,微軟正黑體,新細明體, Helvetica, sans-serif;
+    color: #333333;
+}
+.container{ padding:0px; }
+.container .row{margin: 0px;}
+#StockPricePanel {padding: 10px 15px;background: #f3f3f3;display: table;width: 100%;border: 1px solid #ddd;border-radius: 3px;margin-top: 10px;font-size: 12pt;font-weight: bold;color: #428bca;}
+#StockPricePanel:before{ content: '現在時間：'}
+.row.listitem{ font-size: 12pt;font-weight: bold;background: #f3f3f3;margin-top: 10px;border-top: 1px solid #ddd; display: none;}
+#CouponList>.row, .row.listitem {padding: 10px 0;border-bottom: 1px solid #ddd;text-align: center;}
+#CouponList img{max-width: 100%;border: 1px solid #aaa;padding: 3px;width: 100%;} 
+#CouponList>.row>div:nth-child(2){ text-align: left;font-size: 14pt;}
+#CouponList>.row>div>.UseCoupon>div>input{ background: #c81e4b; color: #fff;border: #8f3952;border-radius: 10px;font-size: 14pt;padding: 5px 0;width: 80%;text-align: center;}
+#CouponList>.row>div>.UseCoupon>div>input:hover{ background: #a90530;}
+#CouponList>.row .title{font-size: 14pt;color: #000;padding: 5px 10px;margin-bottom: 5px;border-bottom: 1px solid #bfbfbf}
+#CouponList>.row>div>.UseCoupon>div {width: 50%;display: inline-block;vertical-align: middle;padding: 0 3%;}
+#CouponList>.row>div>.UseCoupon>div:first-child{ text-align: right;}
+#CouponList>.row>div>.UseCoupon>div:last-child{text-align: left;}
+#CouponList>.row.used>div>.UseCoupon>div {width: 95%;padding: 5px;text-align: center;background: #cacaca;color: #747474;border-radius: 10px;font-size: 13pt;margin: auto;display: block;}
+#CouponList>.row.used .title {border: 0;color: #bababa;}
+@media (max-width: 991px) and (min-width: 768px) {
+	#CouponList>.row>div:nth-child(2){width:50%;}
+	#CouponList>.row>div:nth-child(3){width:25%;}
+	#CouponList>.row>div:nth-child(4){width:25%;}
+}
+@media (max-width: 767px) {	
+	#CouponList {margin: 10px 0;}
+	#CouponList>.row{border-bottom: 2px solid #888;padding-top: 0px;}
+	.col-md-12.listitem{ padding:0px;}
+	#CouponList img{ padding:0; width: 100%; border: none;}
+	#CouponList>.row>div:first-child{ padding:0px;}
+	#CouponList>.row>div:nth-child(2){padding:0 10px;line-height: normal;}
+	#CouponList>.row>div:nth-child(3)>input {width: 80%;}
+	#CouponList>.row>div:nth-child(4)>div:first-child{line-height: normal;}
+	#CouponList>.row>div:nth-child(4)>div:last-child{line-height: normal;font-size: 12pt;font-weight: bold;}
+	#CouponList>.row>div.col-xs-12:nth-child(3) {width: 92%;float: none;display: inline-block;letter-spacing: 1px;font-weight: bold;}
+	#CouponList>.row>div>.UseCoupon>div:last-child>div:first-child{ font-size: 12pt; letter-spacing: 8px; color:#878787; }
+	#CouponList>.row>div>.UseCoupon>div:last-child>div:last-child{ font-size: 11pt;font-family: Arial black;}
+}

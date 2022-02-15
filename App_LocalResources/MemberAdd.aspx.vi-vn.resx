@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BirthDayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BirthDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CellPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CellPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckaddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckaddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBirthDayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBirthDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox1Resource1.Text" xml:space="preserve">
+    <value>Đã đọc và đồng ý với các điều khoản dịch vụ</value>
+    <comment>已閱讀並同意接受會員服務條款</comment>
+  </data>
+  <data name="CheckBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckCellPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckCellPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckPwd2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckPwd2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckPwdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckPwdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckServiceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckServiceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckTelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckTelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChkPwdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChkPwdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlzipResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image1Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>*Họ tên：</value>
+    <comment>＊姓名／名稱：</comment>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>*Ngày sinh：</value>
+    <comment>＊生日：</comment>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>*Điện thoại liên lạc：</value>
+    <comment>＊聯絡電話：</comment>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>*Di động：</value>
+    <comment>＊行動電話：</comment>
+  </data>
+  <data name="Label13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14Resource1.Text" xml:space="preserve">
+    <value>*Địa chỉ：</value>
+    <comment>＊地址：</comment>
+  </data>
+  <data name="Label14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label15Resource1.Text" xml:space="preserve">
+    <value>Điều khoản dịch vụ đối với thành viên</value>
+    <comment>會員服務條款</comment>
+  </data>
+  <data name="Label15Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label16Resource1.Text" xml:space="preserve">
+    <value>*Mã xác nhận：</value>
+    <comment>＊驗證碼：</comment>
+  </data>
+  <data name="Label16Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label17Resource1.Text" xml:space="preserve">
+    <value>Đề xuất sử dụng trình duyệt IE9.0, độ phân giải màn hình 1280*1024 trở lên</value>
+    <comment>建議您使用IE9.0 以上的瀏覽器| 螢幕解析度請設為 1280*1024 以上</comment>
+  </data>
+  <data name="Label17Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>( Mật khẩu từ 4 đến 10 ký tự chữ hoặc số)</value>
+    <comment>（填入4至10個字元的英文字母、數字組合。）</comment>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>(Vui lòng nhập lại mật khẩu)</value>
+    <comment>（請再一次輸入所設定密碼）</comment>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>格式:09xx-xxxxxx</value>
+    <comment>格式:09xx-xxxxxx</comment>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>格式:xx-xxxxxxx</value>
+    <comment>格式:xx-xxxxxxx</comment>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Định dạng: yyyy-MM-dd</value>
+    <comment>格式:yyyy-MM-dd</comment>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Đăng ký thành viên</value>
+    <comment>加入會員</comment>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>*Mật khẩu：</value>
+    <comment>＊密碼：</comment>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>※ Nếu bạn không nhận được thư thông báo, vui lòng kiểm tra hộp thư rác, bởi vì thư này có thể bị hệ thống hiểu nhầm là thư rác.</value>
+    <comment>※若您一直未收到通知信函，可檢查您的垃圾信件匣，因有可能被郵件系統誤認為是垃圾信件。</comment>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Anh</value>
+    <comment>先生</comment>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Chị</value>
+    <comment>小姐</comment>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PwdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PwdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SexResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StringResource1" xml:space="preserve">
+    <value>Bộ phận chăm sóc khách hàng</value>
+    <comment>客服中心</comment>
+  </data>
+  <data name="StringResource2" xml:space="preserve">
+    <value>Bạn chưa đồng ý với các điều khoản dịch vụ</value>
+    <comment>您尚未同意服務條款</comment>
+  </data>
+  <data name="LinkButton1Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-user" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;
+                    Xác nhận gửi</value>
+    <comment>&lt;span class="glyphicon glyphicon-user" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;
+                    確認送出</comment>
+  </data>
+  <data name="LinkButton2Resource1.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-remove" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;
+                    Hủy bỏ</value>
+    <comment>&lt;span class="glyphicon glyphicon-remove" style="font-size:large; margin-right:7px;"&gt;&lt;/span&gt;
+                    取消</comment>
+  </data>
+  <data name="StringResource10" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ</value>
+    <comment>請輸入地址</comment>
+  </data>
+  <data name="StringResource11" xml:space="preserve">
+    <value>Tài khoản bị trùng lặp</value>
+    <comment>帳號重複</comment>
+  </data>
+  <data name="StringResource12" xml:space="preserve">
+    <value>Chào mừng bạn đã gia nhập thành viên!</value>
+    <comment>親愛的會員，您好！歡迎加入</comment>
+  </data>
+  <data name="StringResource13" xml:space="preserve">
+    <value>Thành viên</value>
+    <comment>會員</comment>
+  </data>
+  <data name="StringResource14" xml:space="preserve">
+    <value>Vui lòng ghi nhớ thông tin tài khoản của bạn dưới đây:</value>
+    <comment>以下是您的帳號資料，請熟記以下重要訊息</comment>
+  </data>
+  <data name="StringResource15" xml:space="preserve">
+    <value>Tài khoản của bạn</value>
+    <comment>您的帳號</comment>
+  </data>
+  <data name="StringResource16" xml:space="preserve">
+    <value>Mật khẩu của bạn</value>
+    <comment>您的密碼</comment>
+  </data>
+  <data name="StringResource17" xml:space="preserve">
+    <value>Địa chỉ kích hoạt tài khoản：</value>
+    <comment>開通帳號網址：</comment>
+  </data>
+  <data name="StringResource18" xml:space="preserve">
+    <value>Để kích hoạt tài khoản, vui lòng nhấp chọn liên kết này, hoặc copy và paste vào trình duyệt của bạn.</value>
+    <comment>為了啟動你的帳號，請點選連結或是複製連結在瀏覽器上貼上</comment>
+  </data>
+  <data name="StringResource19" xml:space="preserve">
+    <value>Cám ơn bạn đã gia nhập</value>
+    <comment>感謝您的加入！</comment>
+  </data>
+  <data name="StringResource20" xml:space="preserve">
+    <value>Lưu ý: Đây là thông báo tự động, vui lòng không trả lời email này.</value>
+    <comment>提醒您：此封『會員通知』為系統發出，請勿直接回覆。</comment>
+  </data>
+  <data name="StringResource21" xml:space="preserve">
+    <value>Cảnh giác: Nhân viên chăm sóc khách hàng không được phép yêu cầu bạn thay đổi tài khoản hoặc yêu cầu thực hiện lại lệnh chuyển khoản. Nếu gặp tình huống này, vui lòng gọi về bộ phận CSKH.</value>
+    <comment>提醒您，客服人員均不會要求消費者更改帳號或要求以ATM重新轉帳匯款</comment>
+  </data>
+  <data name="StringResource22" xml:space="preserve">
+    <value />
+    <comment>若有上述情形，請立即撥打165防詐騙專線查詢</comment>
+  </data>
+  <data name="StringResource23" xml:space="preserve">
+    <value>Mã thành viên</value>
+    <comment>會員編號</comment>
+  </data>
+  <data name="StringResource24" xml:space="preserve">
+    <value>Đã đăng ký thành viên lúc</value>
+    <comment>已於</comment>
+  </data>
+  <data name="StringResource25" xml:space="preserve">
+    <value>Đăng ký thành viên</value>
+    <comment>加入會員</comment>
+  </data>
+  <data name="StringResource26" xml:space="preserve">
+    <value>Thông báo đăng ký thành viên</value>
+    <comment>加入會員通知</comment>
+  </data>
+  <data name="StringResource27" xml:space="preserve">
+    <value>Hệ thống sẽ gửi "Thông báo đăng ký thành viên" vào địa chỉ e-mail bạn cung cấp, nội dung bao gồm tên tài khoản đăng nhập (e-mail), mật khẩu và liên kết kích hoạt tài khoản. Vui lòng nhấp chọn liên kết này để hoàn thành việc đăng ký thành viên.</value>
+    <comment>系統將立即寄發『加入會員通知』信函至您所登錄之E-Mail中，您必須完成帳號開通程序後，才能登入網站與使用會員功能，此信函中包含您所設定之登錄帳號(即E-mail)、密碼。請靜候開通帳號通知信。</comment>
+  </data>
+  <data name="StringResource3" xml:space="preserve">
+    <value>Email không hợp lệ</value>
+    <comment>電子信箱格式錯誤</comment>
+  </data>
+  <data name="StringResource4" xml:space="preserve">
+    <value>Mật khẩu từ 4 đến 10 ký tự chữ hoặc số</value>
+    <comment>密碼長度請輸入4至10個英文或數字</comment>
+  </data>
+  <data name="StringResource5" xml:space="preserve">
+    <value>Mật khẩu không trùng khớp</value>
+    <comment>密碼與確認密碼不同</comment>
+  </data>
+  <data name="StringResource6" xml:space="preserve">
+    <value>Vui lòng nhập tên</value>
+    <comment>請輸入您的名字</comment>
+  </data>
+  <data name="StringResource7" xml:space="preserve">
+    <value>Vui lòng nhập ngày sinh</value>
+    <comment>請輸入正確日期</comment>
+  </data>
+  <data name="StringResource8" xml:space="preserve">
+    <value>Số điện thoại không hợp lệ</value>
+    <comment>聯絡電話格式錯誤</comment>
+  </data>
+  <data name="StringResource9" xml:space="preserve">
+    <value>Số điện thoại không hợp lệ</value>
+    <comment>行動電話格式錯誤</comment>
+  </data>
+  <data name="Label18Resource1.Text" xml:space="preserve">
+    <value>*Email：</value>
+    <comment>＊電子信箱：</comment>
+  </data>
+  <data name="Label18Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

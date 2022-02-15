@@ -1,0 +1,105 @@
+﻿div { border: 0px; } 
+body{font-family:Arial,微软雅黑, 新細明體, Helvetica, sans-serif; color:#333333;}
+label {margin: 0;}
+img {max-width: 100%;}
+.row{ margin:0px; }
+.col-md-3{text-align:right;}
+.col-md-9{padding:0px 0px;}
+.textLabel{margin-left:15px;}
+.container {margin-right: auto;margin-left: auto;padding-left: 15px;padding-right: 15px;}
+#loginrow {margin-bottom: 60px;}
+#login_cont{padding:25px 0%;width: 100%;max-width: 554px;margin: auto;}
+#login_btn {text-align: center;}
+#add_login_btn{padding:25px 0; margin:0px;}
+#add_login_btn>#reg_title{font-size: 16pt;width: 100%;text-align: center;background-color: #f5f5f5;padding: 5px;margin-bottom: 10px;}
+#add_login_btn>.row {margin: 0px;margin-bottom: 10px;padding-bottom:10px !important;border-bottom: 1px solid #d4d4d4;}
+#add_login_btn>.row>div {padding:0px;}
+#add_login_btn>.row>.col-md-2 {width: 25%;margin-top: 7px;}
+#add_login_btn>.row:last-child>.col-md-2 {margin-top: 0px;}
+#add_login_btn>.row>.col-md-10 {width: 75%;}
+#add_login_btn input[type="text"],#add_login_btn input[type="password"] {width: 80% !important;margin: 5px 0px;margin-right: 2%;}	
+#Label15, #Label13, #Label19, #Label20, #Label26 {display: block;color:#999;}
+#Label5 {font-size: 16pt;}
+#ddlCity, #ddlCountry, #ddlzip {width: 23%;float: left;height: 26px; margin:5px 0;margin-right: 1.9%;}
+#add_login_btn #TextBox2 {width: 30% !important;margin-bottom: 0 !important;}
+a.btn .glyphicon {vertical-align: sub;}
+#add_login_btn>.row:nth-last-child(4) {padding:0 !important;margin: 0;}
+#add_login_btn>.row:nth-last-child(2) { margin-bottom: 0;}
+#add_login_btn>.row:last-child>div {background:#f5f5f5;}
+#add_login_btn>.row>div.col-md-10>span {display: block;}
+#add_login_btn>.row>.col-md-2 {text-align: right;padding-right: 10px;}
+#add_login_btn>.row:last-child>.col-md-2 {text-align: left;}
+/*#Label3 {width: auto !important;}*/
+#Image2 {margin: 0 !important;}
+#add_login_btn>.row:last-child>div:first-child {width: 25%;border-bottom: 1px solid #d4d4d4;padding: 10px 0;text-align: right;padding-right: 10px;}
+#add_login_btn>.row:last-child>div:nth-child(2) {width: 75%;border-bottom: 1px solid #d4d4d4;padding: 2px 0;padding-bottom: 3px;text-align: left;}
+#add_login_btn>.row:last-child>div:last-child { background:none;width: 100%;text-align: center;}
+#other_login_btn>a {display: table;margin: auto;float: none;}
+#other_login_btn>#other_title {font-size: 16pt;width: 100%;text-align: center;background-color: #f5f5f5;padding: 5px;margin-bottom: 10px;}
+/*#LinkButton4 { margin:0 !important;margin-top: 10px !important;}
+#LinkButton7{ display:none;}
+#LinkButton2 {border: 0px;background: none;text-decoration: underline;color: inherit;}
+#LinkButton2:after {content: '?';}
+#LinkButton2>span{ display: none;}*/
+#LinkButton8 {margin: 0px !important;margin-top: 10px !important;}
+#CheckBox1 {vertical-align: middle;margin: 0;margin-right: 5px;}
+#foot {background-repeat: repeat-x;color: #898989;background-color: #fcfcfc;text-align: center;}
+#foot .fontcenter {padding-top: 15px !important;padding-bottom: 10px;}
+.bs-footer {padding: 0;margin: 0;bottom: 0;left: 0;width: 100%;position: fixed;}
+/*.container>.row:first-child {display: none;}*/
+@media (max-width: 1199px) {
+	#login_cont>div>div>div {display: inline-block;}
+	#login_cont>div {display: table;margin: auto;padding: 0;}
+	#add_login_btn{ display:table; margin:auto;}
+	#login_btn {width: 100%;}
+	#login_cont {padding-bottom: 10px;}
+}
+@media (max-width: 991px) {
+	.col-md-3{text-align:left; padding:0px 0px;}      
+	.textLabel{margin-left:0px;}
+	.btn1{margin-left:0px;}
+	#login_btn{ padding:0px; text-align:center;}
+	#login_btn #LinkButton1, #login_btn #LinkButton2, #login_btn #LinkButton7{padding: 6px 0;width: 31% !important;}
+	#add_login_btn{ border:1px solid #d4d4d4; margin-bottom: 10px; padding-top:0px;margin-top: 20px;}
+	#add_login_btn>.row {padding: 10px;margin: 0;}
+	#add_login_btn>.row>div{border:0px !important;}
+	#str_agree {width: 100%;}
+	#add_login_btn>.row:last-child>div{ float:left;}
+	#add_login_btn input[type="text"],#other_login_btn input[type="password"] {width: 70% !important;}
+	#add_login_btn>.row>.col-md-2 { float:left;/*width: 100%;*/}
+	#add_login_btn>.row>.col-md-10 {float:left;/*width: 100%;*/}
+}
+@media (max-width: 767px) {	
+	#login_cont {padding: 0;margin: 0;margin-top:10px;}
+	#login_cont>div>div>div{ display:block; margin-bottom:0px;}
+	#login_cont>div{ display:block; margin:0}
+	#add_login_btn{ padding:0px; display:block;text-align: center;height: auto;}
+	#add_login_btn>a:last-child>img{ margin-bottom:0px !important;}
+	#UserPwd,#UserID{ width: 100% !important;}
+	input#TextBox1 {max-width: 100%;}
+	#login_btn{ margin-bottom:10px;}
+	#login_btn #LinkButton1, #login_btn #LinkButton2, #login_btn #LinkButton7{padding:6px 0;width: 100% !important; margin-bottom:10px; max-width: 225px}
+	#add_login_btn>a>img {max-width: 100%;}
+	#add_login_btn>a {max-width: 100%;}
+	#add_login_btn input[type="text"], #other_login_btn input[type="password"] {width: 100% !important;margin: 5px 0px !important;border: 1px solid #ccc;}
+	#ddlCity, #ddlCountry, #ddlzip {width: 32%; margin:0px;margin-left: 2%;}
+	#ddlCity{ margin:0px;}
+	#ddlzip{ width:30%;}
+	#add_login_btn>.row:last-child {padding: 0;}
+	#add_login_btn>.row:last-child>div{width: 100% !important;float: none;padding: 0 !important; text-align: center !important;}
+	#add_login_btn>.row:last-child>div:first-child{ padding-top: 3px !important ;padding-bottom: 1px !important;}
+	#add_login_btn>.row:last-child>div:nth-child(2){ padding-bottom:10px !important;text-align: center;}
+	#form1 {padding-bottom: 15px;}
+	#add_login_btn>.row>.col-md-2 { float:none;width: 100%; text-align: left;}
+	#add_login_btn>.row>.col-md-10 {float:none;width: 100%;}
+}
+@media (min-width: 768px){
+	.container {width: 750px;}
+}
+@media (min-width: 992px) {
+	/*.container{width:820px;}*/
+	.container {width: 970px;}
+}
+@media (min-width: 1200px){
+	.container {width: 1170px;padding: 0px;}
+}

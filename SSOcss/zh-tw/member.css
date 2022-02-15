@@ -1,0 +1,38 @@
+﻿div { border: 0px; } 
+body{font-family:Arial,微軟正黑體,新細明體, Helvetica, sans-serif; color:#333333;}
+.col-md-2{text-align:right; padding-right:0px;}
+
+.row{ padding:4px 0px;}
+.col-md-10{padding-left:0px;}
+.btn {width:135px; height:37px; margin-right:10px;}
+.bs-footer{padding:0; margin:0; bottom:0; left:0; width:100%; position:fixed;}        
+#foot { background-repeat:repeat-x; color:#898989; margin-top:20px;background-color:#f9f9f9;}
+
+.col-md-1 {width: 8.33333333%;}
+.col-md-2 {width: 16.66666667%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33333333%;}
+.col-md-5 {width: 41.66666667%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33333333%;}
+.col-md-8 {width: 66.66666667%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33333333%;}
+.col-md-11 {width: 91.66666667%;}
+.col-md-12 {width: 100%;}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {float: left;}
+
+#form1{padding:10px 0;}
+@media (max-width: 991px){
+    .col-md-2{text-align:left;}
+    .col-md-10{padding-left:30px;}
+}
+@media (min-width: 990px){
+    .container{width:100%;}            
+}
+@media (max-width: 800px){
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {width: 100%;padding: 0px 10%;}  
+	#form1 .container>.row{ border-bottom:1px dashed #ccc;width: 100%;margin: 0;}
+	#form1 input{max-width: 100%;margin: 6px 0;margin-top: -80px;padding: 0;line-height: normal;}	
+	#LinkButton1, #LinkButton2, #LinkButton3{ display: list-item;margin: 5px auto;}
+}

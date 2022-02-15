@@ -1,0 +1,44 @@
+﻿swagger: "2.0"
+info:
+  description: "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters."
+  version: "1.0.0"
+  title: "Swagger Petstore"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "bak_rd.hawk.net.tw"
+basePath: "/"
+schemes:
+- "http"
+paths:
+  /api/Authorization.ashx:
+    get:
+      summary: "Finds Pets by status"
+      description: "Multiple status values can be provided with comma separated strings"
+      operationId: "Authorization"
+      produces:
+      - "text/htm"
+      parameters:
+      - name: "CheckM"
+        in: "query"
+        description: "MD5(OrgName+驗證碼)"
+        required: false
+        type: "string"
+      - name: "APPID"
+        in: "query"
+        description: "charles@ether.com.tw"
+        required: false
+        type: "string"
+      - name: "SiteID"
+        in: "query"
+        description: "網站代號"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"

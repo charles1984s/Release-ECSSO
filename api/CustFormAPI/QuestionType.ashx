@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="QuestionType.ashx.cs" Class="ECSSO.api.CustFormAPI.QuestionType" %>

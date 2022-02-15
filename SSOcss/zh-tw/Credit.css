@@ -1,0 +1,17 @@
+﻿body {}
+[id*='Button'].CreditBtn{
+	border-radius: 15px;
+    margin: 10px;
+    border: 1px #000 solid;
+    padding: 5px 10px;
+	background:linear-gradient(top,#FFF,#CCC);
+	background:-moz-linear-gradient(top,#FFF,#CCC);
+	background:-webkit-linear-gradient(top,#FFF,#CCC);
+	color:#666;
+	font-weight:bolder;
+}
+[id*='DropDownList1']{
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-left:10px;
+}

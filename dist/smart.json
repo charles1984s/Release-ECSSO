@@ -1,0 +1,1363 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.2",
+        "title": "雲林文化旅遊網觀光資料",
+        "description": "雲林文化旅遊網_景點/活動/餐飲/旅館詳細介紹\r\n2018/11/28\r\nVer 1.2"
+    },
+    "host": "admin.tour.yunlin.gov.tw",
+    "basePath": "/api",
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/getTour.aspx": {
+            "get": {
+                "description": "欄位資訊如下：\r\nSiteID:743(代表中文站)\r\nSiteID:744(代表英文站)\r\n\r\ntype:node(代表景點)\r\ntype:event(代表活動)\r\ntype:shop(代表餐飲)\r\ntype:hotel(代表旅館)",
+                "summary": "取得雲林文化旅遊網觀光資料",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "getTourAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "SiteID",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getTour.aspx?SiteID={{SiteID}}&type={{type}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "取得雲林文化旅遊網觀光資料",
+                        "x-testDescription": "欄位資訊如下：\r\nSiteID:743(代表中文站)\r\nSiteID:744(代表英文站)\r\n\r\ntype:node(代表景點)\r\ntype:event(代表活動)\r\ntype:shop(代表餐飲)\r\ntype:hotel(代表旅館)"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/Authorization.ashx": {
+            "get": {
+                "description": "欄位資訊如下：\r\nSiteID:743(代表中文站)\r\nSiteID:744(代表英文站)\r\n\r\ntype:node(代表景點)\r\ntype:event(代表活動)\r\ntype:shop(代表餐飲)\r\ntype:hotel(代表旅館)",
+                "summary": "取得雲林文化旅遊網觀光資料",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "AuthorizationAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "CheckM",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "APPID",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "SiteID",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/Authorization.ashx?CheckM={{CheckM}}&APPID={{APPID}}&SiteID={{SiteID}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "取得雲林文化旅遊網觀光資料",
+                        "x-testDescription": "欄位資訊如下：\r\nSiteID:743(代表中文站)\r\nSiteID:744(代表英文站)\r\n\r\ntype:node(代表景點)\r\ntype:event(代表活動)\r\ntype:shop(代表餐飲)\r\ntype:hotel(代表旅館)"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getVoices.ashx": {
+            "get": {
+                "description": "說明：根據Type取得相關語音資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得歡迎詞(Greeting)\r\nType = greeting\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \t \r\n\r\n\r\n2. 取得景點語音導覽(nodeGuide)\r\nType = nodeGuide\r\nItems = {\"AreaID:\",\"YL\",\"nodeID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \r\n\r\n\r\n3. 取得店家語音導覽(shopGuide)\r\nType = shopGuide\r\nItems = {\"AreaID:\",\"YL\",\"shopID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \r\n\r\n\r\n4. 取得旅宿語音導覽(hotelGuide)\r\nType = hotelGuide\r\nItems = {\"AreaID:\",\"YL\",\"hotelID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]}",
+                "summary": "語音導覽(getVoices)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetVoicesAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getVoices.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "語音導覽(getVoices)",
+                        "x-testDescription": "說明：根據Type取得相關語音資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得歡迎詞(Greeting)\r\nType = greeting\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \t \r\n\r\n\r\n2. 取得景點語音導覽(nodeGuide)\r\nType = nodeGuide\r\nItems = {\"AreaID:\",\"YL\",\"nodeID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \r\n\r\n\r\n3. 取得店家語音導覽(shopGuide)\r\nType = shopGuide\r\nItems = {\"AreaID:\",\"YL\",\"shopID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]} \r\n\r\n\r\n4. 取得旅宿語音導覽(hotelGuide)\r\nType = hotelGuide\r\nItems = {\"AreaID:\",\"YL\",\"hotelID\":\"1\"}\r\n\r\n回傳：(僅單一筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL\":\"http://.../xxx.mp3\"}]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getAds.ashx": {
+            "get": {
+                "description": "說明：取得各區廣告資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得版頭廣告(Banners)\r\nType = Banners\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":97}\r\n\r\n回傳：(1筆資料10個連結)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL1\":\"http://.../xxx\",\"Link1\":\"http://.../xxx\",\"URL2\":\"http://.../xxx\",\"Link2\":\"http://.../xxx\",\"URL3\":\"http://.../xxx\",\"Link3\":\"http://.../xxx\",\"URL4\":\"http://.../xxx\",\"Link4\":\"http://.../xxx\",\"URL5\":\"http://.../xxx\",\"Link5\":\"http://.../xxx\"}]}\r\n\r\n#備註: ClassID目前設為97\r\n2. 取得其他廣告(others)\r\nType = others\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":122,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n   \"image\":\"http://.../xxx\",\r\n\t\"title\":\"標題\",\r\n\t\"link\":\"連結\"\r\n  }, ..., ...]}",
+                "summary": "廣告資訊(getAds)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetAdsAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getAds.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "廣告資訊(getAds)",
+                        "x-testDescription": "說明：取得各區廣告資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得版頭廣告(Banners)\r\nType = Banners\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":97}\r\n\r\n回傳：(1筆資料10個連結)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"URL1\":\"http://.../xxx\",\"Link1\":\"http://.../xxx\",\"URL2\":\"http://.../xxx\",\"Link2\":\"http://.../xxx\",\"URL3\":\"http://.../xxx\",\"Link3\":\"http://.../xxx\",\"URL4\":\"http://.../xxx\",\"Link4\":\"http://.../xxx\",\"URL5\":\"http://.../xxx\",\"Link5\":\"http://.../xxx\"}]}\r\n\r\n#備註: ClassID目前設為97\r\n2. 取得其他廣告(others)\r\nType = others\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":122,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n   \"image\":\"http://.../xxx\",\r\n\t\"title\":\"標題\",\r\n\t\"link\":\"連結\"\r\n  }, ..., ...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getNews.ashx": {
+            "get": {
+                "description": "說明：取得最新消息相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":43}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得News(News)\r\nType = News\r\nItems = {\"NewsTypeID\":43,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}} \r\nNewsTypeID = 43 //最新消息\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"NewsID\":\"0001\",\"Date\":\"2017/01/01 12:34\",\"Title\":\"訊息標題\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\"}]}",
+                "summary": "News資訊(getNews)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetNewsAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getNews.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "News資訊(getNews)",
+                        "x-testDescription": "說明：取得最新消息相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":43}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得News(News)\r\nType = News\r\nItems = {\"NewsTypeID\":43,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}} \r\nNewsTypeID = 43 //最新消息\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"NewsID\":\"0001\",\"Date\":\"2017/01/01 12:34\",\"Title\":\"訊息標題\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\"}]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getShop.ashx": {
+            "get": {
+                "description": "說明：取得店家相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得購物商店資料(Shops)\r\nType = Shops\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"店名\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},.... ,...]}\r\n2. 取得吃喝商店資料(Foods)\r\nType = Foods\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"店名\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},.... ,...]}\r\n3. 取得商店資料詳細資料(detailsShop) \r\nType = detailsShop\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"店家名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\" 店家地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"營業時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\"店家地圖網址\"，\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"銷售資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"QRCode\":\"警告或注意事項\",\r\n\"BeaconUUID\":\"常用搜尋關鍵字\",\r\n\"Changetime\":\"資料異動時間\",\"Duration\":\"停留時間\"},....,...]}",
+                "summary": "商店資訊(getShop)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetShopAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getShop.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "商店資訊(getShop)",
+                        "x-testDescription": "說明：取得店家相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得購物商店資料(Shops)\r\nType = Shops\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"店名\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},.... ,...]}\r\n2. 取得吃喝商店資料(Foods)\r\nType = Foods\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"店名\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://….\",\"DetailURL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},.... ,...]}\r\n3. 取得商店資料詳細資料(detailsShop) \r\nType = detailsShop\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"店家名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\" 店家地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"營業時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\"店家地圖網址\"，\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"銷售資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"QRCode\":\"警告或注意事項\",\r\n\"BeaconUUID\":\"常用搜尋關鍵字\",\r\n\"Changetime\":\"資料異動時間\",\"Duration\":\"停留時間\"},....,...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getNode.ashx": {
+            "get": {
+                "description": "說明：取得景點相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}   \r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得景點資料(Nodes)\r\nType = Nodes\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"景點名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},....,...]}\r\n2. 取得景點資料詳細資料(detailsNode)\r\nType = detailsNode\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"景點名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Zone\":\"景區編號\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\"景點地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"開放時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\"景點地圖網址\"，\r\n\"Gov\":\" 景點(或景區)之管理權責單位代碼\",\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Orgclass\":\" 觀光資料生產單位之景點分類說明\",\r\n\"Class1\":\" 景點分類代碼1\",  \"Class2\":\" 景點分類代碼2\",  \"Class3\":\" 景點分類代碼3\",\r\n\"Level\":\" 古蹟分級\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"票價資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"Changetime\":\"資料異動時間\",\r\n\"Duration\":\"停留時間\"\r\n},....,...]}",
+                "summary": "景點資訊(getNode)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetNodeAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getNode.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "景點資訊(getNode)",
+                        "x-testDescription": "說明：取得景點相關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}   \r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得景點資料(Nodes)\r\nType = Nodes\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"景點名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},....,...]}\r\n2. 取得景點資料詳細資料(detailsNode)\r\nType = detailsNode\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"景點名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Zone\":\"景區編號\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\"景點地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"開放時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\"景點地圖網址\"，\r\n\"Gov\":\" 景點(或景區)之管理權責單位代碼\",\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Orgclass\":\" 觀光資料生產單位之景點分類說明\",\r\n\"Class1\":\" 景點分類代碼1\",  \"Class2\":\" 景點分類代碼2\",  \"Class3\":\" 景點分類代碼3\",\r\n\"Level\":\" 古蹟分級\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"票價資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"Changetime\":\"資料異動時間\",\r\n\"Duration\":\"停留時間\"\r\n},....,...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getHotel.ashx": {
+            "get": {
+                "description": "說明：取得旅宿資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}    \r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\t\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得旅宿資料(Hotels)\r\nType = Hotels\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\": \"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"旅宿名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},...,...]}\r\n2. 取得旅宿資料詳細資料(detailsHotel) \r\nType = detailsHotel\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"旅宿名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\" 店家地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"營業時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\" 旅宿地圖網址\"，\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"銷售資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"QRCode\":\"QRCode\",\r\n\"Changetime\":\"資料異動時間\",\r\n\"Duration\":\"停留時間\"\r\n},....,...]}",
+                "summary": "旅宿資訊(getHotel)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetHotelAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getHotel.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "旅宿資訊(getHotel)",
+                        "x-testDescription": "說明：取得旅宿資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}    \r\n\r\n-----------\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\"}\t\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得旅宿資料(Hotels)\r\nType = Hotels\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\": \"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"旅宿名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456},...,...]}\r\n2. 取得旅宿資料詳細資料(detailsHotel) \r\nType = detailsHotel\r\nItems = {\"AreaID\":\"YL\",\"id\":1}\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\r\n\"ID\":\"1\",\"Name\":\"旅宿名稱\",\r\n\" Description\":\"文字簡介\",\r\n\"Toldescribe\" :\"詳細介紹\",\r\n\"Tel\":\"服務電話\"\r\n\"Location\":\" 店家地址\",\r\n\"Zipcode\":\"郵遞區號,\r\n\"Travellinginfo\" :\" 開車及搭乘大眾運輸文字描述\",\r\n\"Opentime\":\"營業時間\",\r\n\" Picture1\",\"圖片1連結\", \" Picdescribe1\":\"圖片1描述\",\r\n\" Picture2\",\"圖片2連結\", \" Picdescribe2\":\"圖片2描述\", \r\n\" Picture3\",\"圖片3連結\", \" Picdescribe3\":\"圖片3描述\",\r\n\"Map\":\" 旅宿地圖網址\"，\r\n\"px\":\"x座標\", \"py\":\"y座標\",\r\n\"Website\":\"網址\",\r\n\"Parkinginfo\":\"停車資訊\",\r\n\"Parkinginfo_px\":\"停車場x座標\", \"Parkinginfo_py\":\"停車場y座標\",\r\n\"Ticketinfo\":\"銷售資訊\",\r\n\"Remarks\":\"警告或注意事項\",\r\n\"Keyword\":\"常用搜尋關鍵字\",\r\n\"QRCode\":\"QRCode\",\r\n\"Changetime\":\"資料異動時間\",\r\n\"Duration\":\"停留時間\"\r\n},....,...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getEvent.ashx": {
+            "get": {
+                "description": "說明：取得活動資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":46}  //藝文: 46；活動: 106\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得資料筆數(TotalEvents) \r\nType = TotalEvents\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n\r\n2. 取得藝文活動(Events)\r\nType = Events\r\nItems = {\"AreaID\":\"YL\",\"subMenuID\":46,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n3. 取得活動訊息(otherEvents)\r\nType = otherEvents\r\nItems = {\"AreaID\":\"YL\",\"subMenuID\":106,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n4. 取得全部活動資料(AllEvents)\r\nType = AllEvents\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n5. 搜尋活動訊息(searchEvents)\r\nType = searchEvents\r\nItems = {\"AreaID\":\"YL\",\"keyword\":\"\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}",
+                "summary": "活動資訊(getEvent)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetEventAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getEvent.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "活動資訊(getEvent)",
+                        "x-testDescription": "說明：取得活動資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":46}  //藝文: 46；活動: 106\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得資料筆數(TotalEvents) \r\nType = TotalEvents\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n\r\n2. 取得藝文活動(Events)\r\nType = Events\r\nItems = {\"AreaID\":\"YL\",\"subMenuID\":46,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n3. 取得活動訊息(otherEvents)\r\nType = otherEvents\r\nItems = {\"AreaID\":\"YL\",\"subMenuID\":106,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n4. 取得全部活動資料(AllEvents)\r\nType = AllEvents\r\nItems = {\"AreaID\":\"YL\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}\r\n5. 搜尋活動訊息(searchEvents)\r\nType = searchEvents\r\nItems = {\"AreaID\":\"YL\",\"keyword\":\"\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"活動名稱\",\"Brief\":\"文字簡介\",\"PicURL\",\"http://…. \",\"DetailURL\",\"http://…\"},....,...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getHelp.ashx": {
+            "get": {
+                "description": "說明：取得操作說指引關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n1. 取得Help頁面 (HelpPage) \r\nType = HelpPage\r\nItems = {\"AreaID\":\"YL\",\"funcID\":\"001\",\"PageID\":\"001\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"PageID\":\"1\",\"StepID\",\"001\",\"PicURL\":\"1\",\"Description\":\"文字敘述\"}, ...]}",
+                "summary": "取得操作指引(getHelp)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetHelpAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getHelp.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "取得操作指引(getHelp)",
+                        "x-testDescription": "說明：取得操作說指引關資訊\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n1. 取得Help頁面 (HelpPage) \r\nType = HelpPage\r\nItems = {\"AreaID\":\"YL\",\"funcID\":\"001\",\"PageID\":\"001\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"PageID\":\"1\",\"StepID\",\"001\",\"PicURL\":\"1\",\"Description\":\"文字敘述\"}, ...]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getTrip.ashx": {
+            "get": {
+                "description": "說明：取得推薦遊程\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":65} \r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":.0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得遊程(Trips)\r\nType = Trips\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":65,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"ID\":\"1\",\"Title\":\"遊程名稱\",\"Brief\":\"文字簡介\",\"PicURL\"\t,\"http://….\",\"DetailURL\",\"http://…\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",\"Popular\",\"100\",\"Recommendation\",\"50\",\"startDay\",\"null\",\"EndDay\",\"null\"},...,...]}\r\n\r\n備註：\r\nClassID，Null:全部, 65:背包, 66:文青, 67:親子, 68:樂活\r\nTotalTime，單位：天\r\nPopular，人氣值（點閱率）（透過Detail URL擷取資料時，於Server端加1）\r\nRecommendation，推薦值（透過互推薦/分享按鈕+1）\r\n2. 取得詳細遊程(detailsTrip)\r\nType = detailsTrip\r\nItems = {\"Id\":1,\"AreaID\":\"YL\",\"ClassID\":65,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"MenuID\":1,\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":排序,\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]}\r\n\r\n備註：\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘",
+                "summary": "推薦遊程資訊(getTrip)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetTripAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getTrip.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "推薦遊程資訊(getTrip)",
+                        "x-testDescription": "說明：取得推薦遊程\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n\r\n0. 取得資料筆數(TotalCounts) \r\nType = TotalCounts\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":65} \r\n回傳：\r\ni.   無資料：{\"Data\":[{\"TotalCounts\":.0}]}\r\nii.  有資料：{\"Data\":[{\"TotalCounts\":15}]}\r\n1. 取得遊程(Trips)\r\nType = Trips\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":65,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"ID\":\"1\",\"Title\":\"遊程名稱\",\"Brief\":\"文字簡介\",\"PicURL\"\t,\"http://….\",\"DetailURL\",\"http://…\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",\"Popular\",\"100\",\"Recommendation\",\"50\",\"startDay\",\"null\",\"EndDay\",\"null\"},...,...]}\r\n\r\n備註：\r\nClassID，Null:全部, 65:背包, 66:文青, 67:親子, 68:樂活\r\nTotalTime，單位：天\r\nPopular，人氣值（點閱率）（透過Detail URL擷取資料時，於Server端加1）\r\nRecommendation，推薦值（透過互推薦/分享按鈕+1）\r\n2. 取得詳細遊程(detailsTrip)\r\nType = detailsTrip\r\nItems = {\"Id\":1,\"AreaID\":\"YL\",\"ClassID\":65,\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：(最多10筆資料)\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"MenuID\":1,\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":排序,\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]}\r\n\r\n備註：\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/MyTripSet.ashx": {
+            "get": {
+                "description": "說明：於Client裝置上自行編輯遊程，未上傳雲端前皆僅存在Client端，上傳時依UUID,UDID,上傳日期,時間儲存版本編號，另記錄，下載時比對版本編號，若有新版時提醒是否下載新版覆蓋至Client端，Client端1遊程只會有單一版本，雲端會按不同裝置儲存最後的版本，PKEY為複合鍵：UUID,UDID,上傳日期,時間。\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n\r\n-----------\r\n\r\n\r\n\r\n1. 取得遊程(getMyTrip)\r\nType = getMyTrip\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"ID\":\"1\",\"AreaID\":\"YL\",\"MemID\":\"000003\",\"Title\":\"遊程名稱\",\"Remark\":\"文字簡介\",\"PicURL\":\"http://….\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",Recommendation\",\"50\",\"startDay\",\"datatime\",\"EndDay\",\"datatime\"},...,...]}\r\n\r\n備註：\r\nID，此為Trip的ID\r\nNodeNum，景點數量\r\nTotalTime，幾日遊\r\nRecommendation，推薦值（透過互推薦/分享按鈕+1）\r\n2. 取得詳細遊程(getMyTripDetail)\r\nType = getMyTripDetail\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"TripID\":\"6\",\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":排序,\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"RouteDetail\":行徑路線說明,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]}\r\n\r\n備註：\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘\r\n3. 上傳遊程(UploadMyTrip)\r\nType = UploadMyTrip\r\nItems = {\"ID\":\"2\",\"AreaID\":\"YL\",\"MemID\":\"000003\",\"Title\":\"遊程名稱\",\"Remark\":\"文字簡介\",\"PicURL\":\"http://….\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",Recommendation\",\"50\",\"startDay\",\"datatime\",\"EndDay\",\"datatime\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nID，若查無ID則新增一筆資料，若有此ID則更新此ID資料\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n4. 上傳詳細遊程(UploadMyTripDetail)\r\nType = UploadMyTripDetail\r\nItems = [{\"TripID\":\"6\",\"MemID\":\"000003\",\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":\"1\",\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"RouteDetail\":行徑路線說明,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：每次Upload會覆蓋原來詳細遊程\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n\r\n5. 刪除遊程(DeleteMyTrip)\r\nType = DeleteMyTrip\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n6. 刪除詳細遊程(DeleteMyTripDetail)\r\nType = DeleteMyTripDetail\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗",
+                "summary": "智慧遊程管理(MyTripSet)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "MyTripSetAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/MyTripSet.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "智慧遊程管理(MyTripSet)",
+                        "x-testDescription": "說明：於Client裝置上自行編輯遊程，未上傳雲端前皆僅存在Client端，上傳時依UUID,UDID,上傳日期,時間儲存版本編號，另記錄，下載時比對版本編號，若有新版時提醒是否下載新版覆蓋至Client端，Client端1遊程只會有單一版本，雲端會按不同裝置儲存最後的版本，PKEY為複合鍵：UUID,UDID,上傳日期,時間。\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n\r\n-----------\r\n\r\n\r\n\r\n1. 取得遊程(getMyTrip)\r\nType = getMyTrip\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"ID\":\"1\",\"AreaID\":\"YL\",\"MemID\":\"000003\",\"Title\":\"遊程名稱\",\"Remark\":\"文字簡介\",\"PicURL\":\"http://….\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",Recommendation\",\"50\",\"startDay\",\"datatime\",\"EndDay\",\"datatime\"},...,...]}\r\n\r\n備註：\r\nID，此為Trip的ID\r\nNodeNum，景點數量\r\nTotalTime，幾日遊\r\nRecommendation，推薦值（透過互推薦/分享按鈕+1）\r\n2. 取得詳細遊程(getMyTripDetail)\r\nType = getMyTripDetail\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"TripID\":\"6\",\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":排序,\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"RouteDetail\":行徑路線說明,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]}\r\n\r\n備註：\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘\r\n3. 上傳遊程(UploadMyTrip)\r\nType = UploadMyTrip\r\nItems = {\"ID\":\"2\",\"AreaID\":\"YL\",\"MemID\":\"000003\",\"Title\":\"遊程名稱\",\"Remark\":\"文字簡介\",\"PicURL\":\"http://….\",\"NodeNum\",\"5\",\"TotalTime\",\"1\",Recommendation\",\"50\",\"startDay\",\"datatime\",\"EndDay\",\"datatime\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nID，若查無ID則新增一筆資料，若有此ID則更新此ID資料\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n4. 上傳詳細遊程(UploadMyTripDetail)\r\nType = UploadMyTripDetail\r\nItems = [{\"TripID\":\"6\",\"MemID\":\"000003\",\"NodeID\":1,\"Name\":\"景點名稱\",\"Type\":\"類型\",\"Nth_day\":\"第幾天\",\"tripDataTime\":\"抵達景點時間\",\"sn\":\"1\",\"Duration\":停留時間,\"RouteTime\":移動所需時間,\"RouteDetail\":行徑路線說明,\"Transportation\":交通工具,\"Px\":經度,\"Py\":緯度},...,...]\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：每次Upload會覆蓋原來詳細遊程\r\nType，0:其他, 1:活動, 2:店家, 3:旅宿, 4:景點\r\nTransportation，1:走路, 2:自行車, 3:機車, 4:開車, 5:大眾運輸, 6:其他\r\nDuration，單位：分鐘\r\nRouteTime，單位：分鐘\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n\r\n5. 刪除遊程(DeleteMyTrip)\r\nType = DeleteMyTrip\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗\r\n6. 刪除詳細遊程(DeleteMyTripDetail)\r\nType = DeleteMyTripDetail\r\nItems = {\"AreaID\":\"YL\",\"MemID\":\"000003\",\"TripID\":\"6\"}\r\n\r\n回傳：\r\ni.   失敗：{\"RspnCode\":\"success\",\"Data\":[{\"TripID\":\"2\"}]}\r\nii.  成功：{\"RspnCode\":\"error\",\"RspnMsg\":0}\r\n\r\n備註：\r\nRspnMsg，0:更新失敗, 1:儲存失敗, 2:資料有誤, 3:刪除失敗"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getTraffic.ashx": {
+            "get": {
+                "description": "說明：取得交通\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n\r\n-----------\r\n\r\n1. 取得交通(Traffic)\r\nType = Traffic\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"URL\",\"http://…\"}]}",
+                "summary": "交通(getTraffic)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetTrafficAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getTraffic.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "交通(getTraffic)",
+                        "x-testDescription": "說明：取得交通\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n\r\n-----------\r\n\r\n1. 取得交通(Traffic)\r\nType = Traffic\r\nItems = {\"AreaID\":\"YL\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"URL\",\"http://…\"}]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getBeacon.ashx": {
+            "get": {
+                "description": "說明：取得Beacon\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得Beacon\r\nType = Beacon\r\nItems = {\"BeaconUUID\":\"beacontest\",\"BeaconMajor\":\"beacontest\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"Title\":\"xxxxxx\", \"URL\",\"http://…\"}]}",
+                "summary": "Beacon(getBeacon)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetBeaconAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getBeacon.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "Beacon(getBeacon)",
+                        "x-testDescription": "說明：取得Beacon\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得Beacon\r\nType = Beacon\r\nItems = {\"BeaconUUID\":\"beacontest\",\"BeaconMajor\":\"beacontest\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\" :[{\"Title\":\"xxxxxx\", \"URL\",\"http://…\"}]}"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getDistance.ashx": {
+            "get": {
+                "description": "說明：取得兩點座標間的距離\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得距離 (Distance)\r\nType = Distance\r\nItems = {\"lat1\":23.14529,\"lng1\":121.15345,\"lat2\":23.14539,\"lng2\":121.12045}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[3377.9]}\r\n\r\n#備註:\r\n單位: 公尺",
+                "summary": "距離(getDistance)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetDistanceAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getDistance.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "距離(getDistance)",
+                        "x-testDescription": "說明：取得兩點座標間的距離\r\n備註：\r\n1.  Token有效時間為15分鐘，有呼叫可延長。\r\n2.  若有錯誤回傳{\"RspnCode\":\"error\",\"RspnMsg\":\"xxxxxx\"}\r\n\r\n-----------\r\n\r\n1. 取得距離 (Distance)\r\nType = Distance\r\nItems = {\"lat1\":23.14529,\"lng1\":121.15345,\"lat2\":23.14539,\"lng2\":121.12045}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[3377.9]}\r\n\r\n#備註:\r\n單位: 公尺"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/User.ashx": {
+            "get": {
+                "description": "1. 註冊 (SignIn)\r\nType = SignIn\r\nItems = {\"ID\":\"xxxx\",\"Pwd\":\"xxxx\",\"UUID\":\"xxxx\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[\"MemID\":\"000001\",\"LoginState\":\"0\"]}\r\n\r\n#備註:\r\nLoginState， 0: 帳號重複、1: 註冊成功、2: 註冊失敗\r\nMemID， 會員編號,系統自動產生\r\n2. 登入 (Login)\r\nType = Login\r\nItems = {\"ID\":\"xxxx\",\"Pwd\":\"xxxx\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[\"MemID\":\"000001\",\"LoginState\":\"3\"]}\r\n\r\n#備註:\r\nLoginState， 3: 登入成功、4: 登入失敗",
+                "summary": "帳號(User)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "UserAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/User.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "帳號(User)",
+                        "x-testDescription": "1. 註冊 (SignIn)\r\nType = SignIn\r\nItems = {\"ID\":\"xxxx\",\"Pwd\":\"xxxx\",\"UUID\":\"xxxx\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[\"MemID\":\"000001\",\"LoginState\":\"0\"]}\r\n\r\n#備註:\r\nLoginState， 0: 帳號重複、1: 註冊成功、2: 註冊失敗\r\nMemID， 會員編號,系統自動產生\r\n2. 登入 (Login)\r\nType = Login\r\nItems = {\"ID\":\"xxxx\",\"Pwd\":\"xxxx\"}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[\"MemID\":\"000001\",\"LoginState\":\"3\"]}\r\n\r\n#備註:\r\nLoginState， 3: 登入成功、4: 登入失敗"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        },
+        "/getSearch.ashx": {
+            "get": {
+                "description": "1. 搜尋 (Search)\r\nType = Search\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":\"0\",\"Keyword\":\"xxxx\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"標題名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456,\"Type\",\"吃喝\"},....,...]}\r\n\r\n#備註:\r\nClassID， 0: 全部、1: 玩樂、2: 吃喝、3: 購物、4: 住宿",
+                "summary": "搜尋(getSearch)",
+                "tags": [
+                    "Misc"
+                ],
+                "operationId": "GetSearchAshxGet",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "Token",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Type",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lng",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "Items",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    },
+                    {
+                        "name": "CheckSum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "x-unitTests": [
+                    {
+                        "request": {
+                            "method": "GET",
+                            "uri": "/getSearch.ashx?Token={{Token}}&Type={{Type}}&Lng={{Lng}}&Items={{Items}}&CheckSum={{CheckSum}}"
+                        },
+                        "expectedResponse": {
+                            "x-allowExtraHeaders": true,
+                            "x-bodyMatchMode": "NONE",
+                            "x-arrayOrderedMatching": false,
+                            "x-arrayCheckCount": false,
+                            "x-matchResponseSchema": true,
+                            "headers": {}
+                        },
+                        "x-testShouldPass": true,
+                        "x-testEnabled": true,
+                        "x-testName": "搜尋(getSearch)",
+                        "x-testDescription": "1. 搜尋 (Search)\r\nType = Search\r\nItems = {\"AreaID\":\"YL\",\"ClassID\":\"0\",\"Keyword\":\"xxxx\",\"Range\":{\"From\":\"1\",\"GetCount\":\"max\"}}\r\n\r\n回傳：\r\ni.   無資料：{\"Data\":[]}\r\nii.  有資料：{\"Data\":[{\"ID\":\"1\",\"Title\":\"標題名稱\",\"Brief\":\"文字簡介\",\"Pic URL\",\"http://….\",\"Detail URL\",\"http://…\",\"Px\":12.3456,\"Py\":12.3456,\"Type\",\"吃喝\"},....,...]}\r\n\r\n#備註:\r\nClassID， 0: 全部、1: 玩樂、2: 吃喝、3: 購物、4: 住宿"
+                    }
+                ],
+                "x-operation-settings": {
+                    "CollectParameters": false,
+                    "AllowDynamicQueryParameters": false,
+                    "AllowDynamicFormParameters": false,
+                    "IsMultiContentStreaming": false
+                }
+            }
+        }
+    }
+}
