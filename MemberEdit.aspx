@@ -79,7 +79,7 @@
                 <asp:Label ID="Label12" runat="server" Text="智財局檔案上傳查詢" meta:resourcekey="Label12Resource"></asp:Label>
                 </a></li>
             <li runat="server" id="li12"><a href="#BankStatement" role="tab" data-toggle="tab">
-                <asp:Label ID="Label14" runat="server" Text="對帳單產製作業"></asp:Label>
+                <asp:Label ID="Label14" runat="server" Text="對帳單作業"></asp:Label>
                 </a></li> 
        </ul>
         <div id="tabtitle"></div>
