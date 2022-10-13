@@ -22,6 +22,36 @@
             font-size:2rem;
             font-weight:600;
         }
+        .sum {
+            text-align:right;
+        }
+        .price {
+            font-size: 2rem;
+            color: #933;
+            font-weight: bold;
+            font-family: fantasy;
+            text-shadow: none;
+            margin: 0 1rem;
+        }
+        .price:before {
+            content:"$"
+        }
+        .footable-filtering .dropdown-menu>li>a.checkbox {
+            border-radius: 0;
+            border-top: 0;
+        }
+        .footable-filtering .dropdown-menu > li:last-child > a.checkbox {
+            border-bottom:0;
+        }
+        #tables>.tableItem>h3 {
+            margin: 2rem 0 0 0.5rem;
+            padding: 1rem;
+            font-weight: 600;
+            color: #457b9d;
+            text-align: left;
+            border-bottom: #457b9d solid 2px;
+            background:#caf0f8;
+        }
     </style>
 </head>
 <body>
@@ -44,13 +74,26 @@
                     <i class="glyphicon glyphicon-remove"></i>
                 </a>
             </h2>
-            <table class="table table-striped table-hover empty"></table>
+            <div id="tables">
+                <div class="tableItem">
+                    <h3></h3>
+                    <table class="table table-striped table-hover empty"></table>
+                    <div class="sum">
+                        <span class="title">總計</span>
+                        <span class="price"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <script src="/Scripts/footable/js/footable.min.js"></script>
     <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
     <script>
+        function format(num) {
+            var reg = /\d{1,3}(?=(\d{3})+$)/g;
+            return (num + '').replace(reg, '$&,');
+        }
         $.extend({
             getMaster: function (data) {
                 data.type = "List";
@@ -91,13 +134,21 @@
                     sitid: $("#siteid").val(),
                     memid: $("#MemID").val()
                 }).done(function (result) {
-                    var $table = $(self).find(".table").first();
-                    if ($table.data("ft") == null) {
-                        ft = FooTable.init($table, result.table);
-                        $table.data("ft", ft);
-                    } else {
-                        $table.data("ft").rows.load(result.table.rows);
+                    var $c = $("#tables");
+                    if (!$c.data("html")) {
+                        $c.data("html", $c.html())
                     }
+                    $c.empty();
+                    console.log(!$c.data("html"));
+                    $(result.tableDetails).each(function (index, element) {
+                        var $item = $($c.data("html"));
+                        var $table = $item.find(".table").first();
+                        $item.find("h3").text(element.name);
+                        $item.find(".sum>.price").text(format(element.total));
+                        console.log($item)
+                        $c.append($item);
+                        FooTable.init($table, element);
+                    });
                     $(self).changePage();
                 });
             },
@@ -138,36 +189,6 @@
             window.setInterval(function () {
                 parent.doIframe && parent.doIframe();
             },1000);
-            /*$.post('/api/Order/BankStatement.ashx', {
-                type:"Detail",
-                sitid: $("#siteid").val(),
-                memid: $("#MemID").val()
-            }, function (response) {
-                $('.table').footable({
-                    "expandFirst": true,
-                    "columns": [
-                        { name: "orderNumber", title: "訂單編號" },
-                        { name: "name", title: "姓名", "sortable": false},
-                        { name: "sex", title: "性別", "sortable": false, "breakpoints": "md sm xs " },
-                        { name: "cell", title: "電話", "sortable": false, "breakpoints": " sm xs "},
-                        { name: "addr", title: "地址", "sortable": false, "breakpoints": "md sm xs "},
-                        { name: "mail", title: "電子信箱", "sortable": false, "breakpoints": " sm xs "},
-                        { name: "productId", title: "商品編號", "breakpoints": " xs "},
-                        { name: "productName", title: "商品名稱", "breakpoints": " xs "},
-                        { name: "price", title: "單價"},
-                        { name: "qty", title: "數量"},
-                        { name: "discount", title: "折扣", "breakpoints": " sm xs "},
-                        { name: "amt", title: "價格" },
-                        { name: "bouns", title: "紅利", "breakpoints": " sm xs "},
-                        { name: "memo", title: "備註", "sortable": false, "breakpoints": "all"}
-                    ],
-                    "rows": response,
-                    "sorting": {
-                        "enabled": true
-                    }
-                });
-            }, "json");
-            */
         });
     </script>
 </body>
