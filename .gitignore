@@ -1,3 +1,5 @@
 Web.config
 GLOBAL.ASA
 lib/*
+UploadFile/**/*.*
+!UploadFile/SampleFile/*.*
