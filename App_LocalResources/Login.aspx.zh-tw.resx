@@ -191,7 +191,7 @@
     <value />
   </data>
   <data name="Label17Resource1.Text" xml:space="preserve">
-    <value>（填入4至20個字元的英文字母、數字組合。）</value>
+    <value>（填入4至20個字元的英文字母大小寫、數字、符號組合。）</value>
   </data>
   <data name="Label17Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -445,8 +445,8 @@
     <comment>電子信箱格式錯誤</comment>
   </data>
   <data name="StringResource31" xml:space="preserve">
-    <value>密碼長度請輸入4至20個英文或數字</value>
-    <comment>密碼長度請輸入4至20個英文或數字</comment>
+    <value>密碼長度請輸入4至20，須包含1個英文字母、數字及符號</value>
+    <comment>密碼長度請輸入4至20，須包含1個英文字母、數字及符號</comment>
   </data>
   <data name="StringResource4" xml:space="preserve">
     <value>請輸入正確驗證碼</value>

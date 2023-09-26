@@ -208,10 +208,10 @@
                                     meta:resourcekey="CheckPwdResource1" />
                                 <div>
                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" Display="Dynamic"
-                                        ErrorMessage="密碼長度需為4~20個字元之英、數字組合，大小寫視為不同字元。" ControlToValidate="Pwd" ValidationExpression="\S{4,20}"></asp:RegularExpressionValidator>
+                                        ErrorMessage="密碼長度需為4~20個字元之英文大小寫、數字、符號組合，大小寫視為不同字元。" ControlToValidate="Pwd" ValidationExpression="\w{4,20}"></asp:RegularExpressionValidator>
                                 </div>
                                 <asp:Label ID="Label19" runat="server" CssClass="description"
-                                    Text="（填入4至20個字元的英文字母、數字組合。）" meta:resourcekey="Label17Resource1" />
+                                    Text="（填入4至20個字元的英文字母大小寫、數字、符號組合。）" meta:resourcekey="Label17Resource1" />
                             </div>
                         </div>
                         <div class="row" style="border-bottom: 1px dotted #d4d4d4; padding-bottom: 20px;">

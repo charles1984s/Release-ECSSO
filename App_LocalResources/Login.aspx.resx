@@ -193,7 +193,7 @@
     <value />
   </data>
   <data name="Label17Resource1.Text" xml:space="preserve">
-    <value>（填入4至20個字元的英文字母、數字組合。）</value>
+    <value>（填入4至20個字元的英文字母大小寫、數字、符號組合。）</value>
   </data>
   <data name="Label17Resource1.ToolTip" xml:space="preserve">
     <value />
