@@ -33,6 +33,7 @@
         <asp:HiddenField ID="weburl" runat="server" />
         <asp:HiddenField ID="RID" runat="server" />
         <asp:HiddenField ID="Click_ID" runat="server" />
+        <div id="errorMessage" runat="server"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding: 15px 0px;">
