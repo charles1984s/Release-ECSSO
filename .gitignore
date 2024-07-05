@@ -3,3 +3,4 @@ GLOBAL.ASA
 lib/*
 UploadFile/**/*.*
 !UploadFile/SampleFile/*.*
+UploadFile/SampleFile/*.bak
